@@ -18,7 +18,9 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
+Bio: Passionate about getting insights from data with deep experience in the development of market based solutions seeking to solve the toughest social and development issues facing bottom of the pyramid communities in frontier markets all over the world.
+
+What motivates me is the sea of knowledge that when learned can reduce the amount of time we spend to solve problems. My major tools of analysis are SQL, R-Studio and Shiny Apps. I also use excel, python, docker, and AWS etc when collaborating with team members.
 
 # List each interest with a dash
 interests:
@@ -41,16 +43,16 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+  link: '#contact'  # For a direct email link, use "vmandela99@gmail.com".
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/USERNAME
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.com/citations?user=PERSON-ID
+  link: https://twitter.com/victormandela8
+- icon: youtube
+  icon_pack: fab
+  link: https://www.youtube.com/channel/UCEAeELl2BiOrJdYsMcHWb8g
 - icon: github
   icon_pack: fab
-  link: https://github.com/USERNAME
+  link: https://github.com/vmandela99
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv

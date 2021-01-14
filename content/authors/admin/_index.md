@@ -1,49 +1,48 @@
 ---
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: My major interests include data modelling, machine learning, design and, deployment of shiny apps.
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
-email: ""
+  - course: MSc in Statistics
+    institution: University of Nairobi
+    year: Sep 2021
+  - course: BSc in Economics, Statistics Major
+    institution: University of Nairobi
+    year: 2015
+  - course: BSc in Data Science, R track
+    institution: Data Camp Online Campus
+    year: 2020
+email: "vmandela99@gmail.com"
 highlight_name: false
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Data science
+- Machine learning
+- ShinyApps and dashboard designs
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
-role: Professor of Artificial Intelligence
+- name: XETOVA SOFTWARE COMPANY
+  url: https://www.xetova.com/
+role: Data Scientist
 social:
 - icon: envelope
   icon_pack: fas
   link: /#contact
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: graduation-cap
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://twitter.com/VictorMandela8
+- icon: youtube
+  icon_pack: fab
+  link: https://www.youtube.com/channel/UCEAeELl2BiOrJdYsMcHWb8g
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/vmandela99
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://www.linkedin.com/vmandela99
 superuser: true
-title: Nelson Bighetti
+title: Victor Mandela
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Victor Mandela is a data scientist at xetova software company, his major roles are to intergrate machine learning principles into software and development of shiny applications. He is passionate about getting insights from data with deep experience in the development of market based solutions seeking to solve the toughest social and development issues facing bottom of the pyramid communities in frontier markets all over the world.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+What motivates him is the sea of knowledge that when learned can reduce the amount of time we spend to solve problems. His major technologies are SQL, R-Studio and Shiny Apps. He also uses advaned excel, python, docker, and AWS when collaborating with team members.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
