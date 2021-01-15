@@ -19,14 +19,9 @@
   weight = 30
 
 [[main]]
-  name = "Courses"
-  url = "courses/"
-  weight = 40
-
-[[main]]
   name = "Contact"
   url = "#contact"
-  weight = 50
+  weight = 40
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/media/resume.pdf` and uncomment the lines below.
