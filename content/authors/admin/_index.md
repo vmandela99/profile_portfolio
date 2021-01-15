@@ -45,4 +45,6 @@ Victor Mandela is a data scientist at xetova software company, his major roles a
 
 What motivates him is the sea of knowledge that when learned can reduce the amount of time we spend to solve problems. His major technologies are SQL, R-Studio and Shiny Apps. He also uses advaned excel, python, docker, and AWS when collaborating with team members.
 
+<!--
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+-->
