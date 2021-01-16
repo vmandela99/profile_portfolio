@@ -8,7 +8,7 @@ headless: true
 
 # Order that this section appears on the page.
 weight: 65
-active: false
+active: true
 
 title: Projects
 subtitle: ''
@@ -28,11 +28,15 @@ content:
   filter_button:
   - name: All
     tag: '*'
-  - name: Deep Learning
-    tag: Deep Learning
+  - name: Machine Learning
+    tag: MAchine Learning
+  - name: Rstats
+    tag: Rstats
+  - name: GIS
+    tag: GIS
   - name: Other
-    tag: Demo
-
+    tag: Analysis
+  
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
   columns: '2'
