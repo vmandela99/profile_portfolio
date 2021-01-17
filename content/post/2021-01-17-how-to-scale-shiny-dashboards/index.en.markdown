@@ -79,7 +79,8 @@ This is what you should do:-
 
 3). Set all actions in Javascript without `server.R` part.
 
-```{r Javascript without server.R, eval=FALSE, include=TRUE}
+
+```r
 ui <- fluidPage(
   actionButton(
     "Click_Button",
@@ -108,7 +109,8 @@ Creating a API has been made achievable by use of the `plumber` package.
 
 Many may ask, **Why use Data base?"
 
-```{r Pseudocode, eval=FALSE, include=TRUE}
+
+```r
 ui <- fluidPage(....)
 
 data <- readRDS("./1gb-file.rds")
@@ -119,8 +121,6 @@ Server <- function(input, output, session){
 }
 
 shinyApp(ui = ui, server = server)
-
-
 ```
 
 Because It reduces the amount of RAM used when you have many users. Its easy sinec you use the `dplyr` package to manipulate the database.
