@@ -19,6 +19,7 @@ image:
   preview_only: no
 projects: []
 runtime: shiny
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
