@@ -5,7 +5,7 @@
     <link>https://victormandela.netlify.app/post/</link>
       <atom:link href="https://victormandela.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>&amp;copy2021</copyright><lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>&amp;copy2021</copyright><lastBuildDate>Sun, 17 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://victormandela.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
@@ -13,404 +13,397 @@
     </image>
     
     <item>
-      <title>Writing technical content in Academic</title>
-      <link>https://victormandela.netlify.app/post/writing-technical-content/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://victormandela.netlify.app/post/writing-technical-content/</guid>
-      <description>&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-&lt;h3 id=&#34;code&#34;&gt;Code&lt;/h3&gt;
-&lt;p&gt;Academic supports a Markdown extension for highlighting code syntax. You can enable this feature by toggling the &lt;code&gt;highlight&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```python
-import pandas as pd
-data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
-data.head()
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas as pd
-data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
-data.head()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;charts&#34;&gt;Charts&lt;/h3&gt;
-&lt;p&gt;Academic supports the popular &lt;a href=&#34;https://plot.ly/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Plotly&lt;/a&gt; chart format.&lt;/p&gt;
-&lt;p&gt;Save your Plotly JSON in your page folder, for example &lt;code&gt;chart.json&lt;/code&gt;, and then add the &lt;code&gt;{{&amp;lt; chart data=&amp;quot;chart&amp;quot; &amp;gt;}}&lt;/code&gt; shortcode where you would like the chart to appear.&lt;/p&gt;
-&lt;p&gt;Demo:&lt;/p&gt;
-
-
-&lt;div id=&#34;chart-965173284&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-  (function() {
-    let a = setInterval( function() {
-      if ( typeof window.Plotly === &#39;undefined&#39; ) {
-        return;
-      }
-      clearInterval( a );
-
-      Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-965173284&#39;, chart.data, chart.layout, {responsive: true});
-      });
-    }, 500 );
-  })();
-&lt;/script&gt;
-&lt;p&gt;You might also find the &lt;a href=&#34;http://plotly-json-editor.getforge.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Plotly JSON Editor&lt;/a&gt; useful.&lt;/p&gt;
-&lt;h3 id=&#34;math&#34;&gt;Math&lt;/h3&gt;
-&lt;p&gt;Academic supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the &lt;code&gt;math&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
-&lt;p&gt;To render &lt;em&gt;inline&lt;/em&gt; or &lt;em&gt;block&lt;/em&gt; math, wrap your LaTeX math with &lt;code&gt;$...$&lt;/code&gt; or &lt;code&gt;$$...$$&lt;/code&gt;, respectively.&lt;/p&gt;
-&lt;p&gt;Example &lt;strong&gt;math block&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;$$\gamma_{n} = \frac{ 
-\left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T 
-\left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}
-{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;p&gt;$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left |\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right |^2}$$&lt;/p&gt;
-&lt;p&gt;Example &lt;strong&gt;inline math&lt;/strong&gt; &lt;code&gt;$\nabla F(\mathbf{x}_{n})$&lt;/code&gt; renders as $\nabla F(\mathbf{x}_{n})$.&lt;/p&gt;
-&lt;p&gt;Example &lt;strong&gt;multi-line math&lt;/strong&gt; using the &lt;code&gt;\\\\&lt;/code&gt; math linebreak:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;$$f(k;p_0^*) = \begin{cases} p_0^* &amp;amp; \text{if }k=1, \\\\
-1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;p&gt;$$f(k;p_0^&lt;em&gt;) = \begin{cases} p_0^&lt;/em&gt; &amp;amp; \text{if }k=1, \\&lt;br&gt;
-1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$&lt;/p&gt;
-&lt;h3 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h3&gt;
-&lt;p&gt;Academic supports a Markdown extension for diagrams. You can enable this feature by toggling the &lt;code&gt;diagram&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file or by adding &lt;code&gt;diagram: true&lt;/code&gt; to your page front matter.&lt;/p&gt;
-&lt;p&gt;An example &lt;strong&gt;flowchart&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-graph TD
-A[Hard] --&amp;gt;|Text| B(Round)
-B --&amp;gt; C{Decision}
-C --&amp;gt;|One| D[Result 1]
-C --&amp;gt;|Two| E[Result 2]
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;graph TD
-A[Hard] --&amp;gt;|Text| B(Round)
-B --&amp;gt; C{Decision}
-C --&amp;gt;|One| D[Result 1]
-C --&amp;gt;|Two| E[Result 2]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-sequenceDiagram
-Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
-loop Healthcheck
-    John-&amp;gt;&amp;gt;John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John--&amp;gt;&amp;gt;Alice: Great!
-John-&amp;gt;&amp;gt;Bob: How about you?
-Bob--&amp;gt;&amp;gt;John: Jolly good!
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;sequenceDiagram
-Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
-loop Healthcheck
-    John-&amp;gt;&amp;gt;John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John--&amp;gt;&amp;gt;Alice: Great!
-John-&amp;gt;&amp;gt;Bob: How about you?
-Bob--&amp;gt;&amp;gt;John: Jolly good!
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example &lt;strong&gt;Gantt diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example &lt;strong&gt;class diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-classDiagram
-Class01 &amp;lt;|-- AveryLongClass : Cool
-&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Class01
-Class09 --&amp;gt; C2 : Where am i?
-Class09 --* C3
-Class09 --|&amp;gt; Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-class Class10 {
-  &amp;lt;&amp;lt;service&amp;gt;&amp;gt;
-  int id
-  size()
-}
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;classDiagram
-Class01 &amp;lt;|-- AveryLongClass : Cool
-&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Class01
-Class09 --&amp;gt; C2 : Where am i?
-Class09 --* C3
-Class09 --|&amp;gt; Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-class Class10 {
-  &amp;lt;&amp;lt;service&amp;gt;&amp;gt;
-  int id
-  size()
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example &lt;strong&gt;state diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-stateDiagram
-[*] --&amp;gt; Still
-Still --&amp;gt; [*]
-Still --&amp;gt; Moving
-Moving --&amp;gt; Still
-Moving --&amp;gt; Crash
-Crash --&amp;gt; [*]
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;stateDiagram
-[*] --&amp;gt; Still
-Still --&amp;gt; [*]
-Still --&amp;gt; Moving
-Moving --&amp;gt; Still
-Moving --&amp;gt; Crash
-Crash --&amp;gt; [*]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;todo-lists&#34;&gt;Todo lists&lt;/h3&gt;
-&lt;p&gt;You can even write your todo lists in Academic too:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;- [x] Write math example
-- [x] Write diagram example
-- [ ] Do something else
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
+      <title>How to Scale Shiny Dashboards</title>
+      <link>https://victormandela.netlify.app/post/how-to-scale-shiny-dashboards/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://victormandela.netlify.app/post/how-to-scale-shiny-dashboards/</guid>
+      <description>&lt;p&gt;Most of the comments I get after sharing mock up and prototype shiny applications are:-&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Write math example&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Write diagram example&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Do something else&lt;/li&gt;
+&lt;li&gt;I love this app&lt;/li&gt;
+&lt;li&gt;How fast did you add this features!!&lt;/li&gt;
+&lt;li&gt;This is exactly what I need in my daily job at the company.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;tables&#34;&gt;Tables&lt;/h3&gt;
-&lt;p&gt;Represent your data in tables:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;First Header&lt;/th&gt;
-&lt;th&gt;Second Header&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&#34;callouts&#34;&gt;Callouts&lt;/h3&gt;
-&lt;p&gt;Academic supports a &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/#alerts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcode for callouts&lt;/a&gt;, also referred to as &lt;em&gt;asides&lt;/em&gt;, &lt;em&gt;hints&lt;/em&gt;, or &lt;em&gt;alerts&lt;/em&gt;. By wrapping a paragraph in &lt;code&gt;{{% alert note %}} ... {{% /alert %}}&lt;/code&gt;, it will render as an aside.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% alert note %}}
-A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-{{% /alert %}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;spoilers&#34;&gt;Spoilers&lt;/h3&gt;
-&lt;p&gt;Add a spoiler to a page to reveal text, such as an answer to a question, after a button is clicked.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; spoiler text=&amp;quot;Click to view the spoiler&amp;quot; &amp;gt;}}
-You found me!
-{{&amp;lt; /spoiler &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
-  &lt;summary&gt;Click to view the spoiler&lt;/summary&gt;
-  &lt;p&gt;You found me!&lt;/p&gt;
-&lt;/details&gt;
-&lt;h3 id=&#34;icons&#34;&gt;Icons&lt;/h3&gt;
-&lt;p&gt;Academic enables you to use a wide range of &lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/#icons&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;icons from &lt;em&gt;Font Awesome&lt;/em&gt; and &lt;em&gt;Academicons&lt;/em&gt;&lt;/a&gt; in addition to &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/#emojis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;emojis&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Here are some examples using the &lt;code&gt;icon&lt;/code&gt; shortcode to render icons:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; icon name=&amp;quot;terminal&amp;quot; pack=&amp;quot;fas&amp;quot; &amp;gt;}} Terminal  
-{{&amp;lt; icon name=&amp;quot;python&amp;quot; pack=&amp;quot;fab&amp;quot; &amp;gt;}} Python  
-{{&amp;lt; icon name=&amp;quot;r-project&amp;quot; pack=&amp;quot;fab&amp;quot; &amp;gt;}} R
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;p&gt;
-  &lt;i class=&#34;fas fa-terminal  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Terminal&lt;br&gt;
-
-  &lt;i class=&#34;fab fa-python  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Python&lt;br&gt;
-
-  &lt;i class=&#34;fab fa-r-project  pr-1 fa-fw&#34;&gt;&lt;/i&gt; R&lt;/p&gt;
-&lt;h3 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h3&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Display Jupyter Notebooks with Academic</title>
-      <link>https://victormandela.netlify.app/post/jupyter/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://victormandela.netlify.app/post/jupyter/</guid>
-      <description>&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
-Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;./index_1_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;Welcome to Academic!
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;install-python-and-jupyterlab&#34;&gt;Install Python and JupyterLab&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and JupyterLab.&lt;/p&gt;
-&lt;p&gt;Alternatively, install JupyterLab with &lt;code&gt;pip3 install jupyterlab&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
-&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY-WEBSITE-FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;SHORT-POST-TITLE&amp;gt;&lt;/code&gt; with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir -p &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-cd &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-jupyter lab index.ipynb
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The &lt;code&gt;jupyter&lt;/code&gt; command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.&lt;/p&gt;
-&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
-&lt;p&gt;The first cell of your Jupter notebook will contain your post metadata (&lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;front matter&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;In Jupter, choose &lt;em&gt;Markdown&lt;/em&gt; as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: My post&#39;s title
-date: 2019-09-01
-
-# Put any other Academic metadata here...
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Edit the metadata of your post, using the &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation&lt;/a&gt; as a guide to the available options.&lt;/p&gt;
-&lt;p&gt;To set a &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
-&lt;p&gt;For other tips, such as using math, see the guide on &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir=.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
-&lt;p&gt;This post was created with Jupyter. The orginal files can be found at &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&#34;&gt;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Welcome to Wowchemy, the website builder for Hugo</title>
-      <link>https://victormandela.netlify.app/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://victormandela.netlify.app/post/getting-started/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Most of the people commenting, have never seen shiny applications before, know nothing about &lt;code&gt;R&lt;/code&gt; and they don&amp;rsquo;t really care that its running at the back of the application.&lt;/p&gt;
+&lt;h2 id=&#34;challenges-faced-by-the-developer&#34;&gt;Challenges Faced by the developer.&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;The common problems I have faced are:-&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;The Wowchemy website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site&lt;/li&gt;
-&lt;li&gt;The template can be modified and customised to suit your needs. It&amp;rsquo;s a good platform for anyone looking to take control of their data and online identity whilst having the convenience to start off with a &lt;strong&gt;no-code solution (write in Markdown and customize with YAML parameters)&lt;/strong&gt; and having &lt;strong&gt;flexibility to later add even deeper personalization with HTML and CSS&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;You can work with all your favourite tools and apps with hundreds of plugins and integrations to speed up your workflows, interact with your readers, and much more&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Customizing user interface&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Increasing the user experience part&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Scaling&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id=&#34;scalable-applications&#34;&gt;Scalable Applications&lt;/h2&gt;
+&lt;p&gt;Before we go into the remedies for this problems, I would first want us to understand the kinds of scaling there is:-&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Vertical Scaling&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;this is where we aim at ** increasing the amount of users for one machine**.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Horizontal scaling&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Scaling the application across multiple machines&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;Scaling.jpg&#34; alt=&#34;Scaling&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;solutions-to-your-scaling-shiny-dashboards&#34;&gt;Solutions to your Scaling Shiny dashboards&lt;/h2&gt;
+&lt;p&gt;Before we explain this are the main power points in brief:-&lt;/p&gt;
+&lt;p&gt;a) Leveraging front end&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use Javascript to handle fast user interactions that do not change data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;b) Extract Computation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Handle resource intensive operations away from the application.&lt;/li&gt;
+&lt;li&gt;Using external source to do the computation will assist.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;c) Set Architecture&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prepare applications to be used by many users.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;The Main aim&lt;/strong&gt; is to make shiny layer thin. Shiny should be a thin layer between the data and the interface.&lt;/p&gt;
+&lt;h2 id=&#34;using-the-power-of-the-browser&#34;&gt;Using the power of the browser&lt;/h2&gt;
+&lt;p&gt;This is what you should do:-&lt;/p&gt;
+&lt;p&gt;1). Render the input in &lt;code&gt;ui.R&lt;/code&gt; and only update them in &lt;code&gt;server.R&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;2). Run inline Javascript code with &lt;code&gt;{Shinyjs}&lt;/code&gt; package.&lt;/p&gt;
+&lt;p&gt;3). Set all actions in Javascript without &lt;code&gt;server.R&lt;/code&gt; part.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ui &amp;lt;- fluidPage(
+  actionButton(
+    &amp;quot;Click_Button&amp;quot;,
+    label = &amp;quot;I will update icon!&amp;quot;,
+    onclick = &amp;quot;$(&#39;mjs_update &amp;gt; i&#39;).toggle class(&#39;fa-arrow-up&#39;);&amp;quot;
+    )
+  )
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;extract-computation-remote-api&#34;&gt;Extract Computation: Remote API&lt;/h2&gt;
+&lt;p&gt;Creating a API has been made achievable by use of the &lt;code&gt;plumber&lt;/code&gt; package.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Load only what is needed.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The entire dataset is rarely needed in the application. Usually the first user action within the app is to filter/select a subset of data. First select them load.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Build Rest API&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wrap data extraction login into a simple API with &lt;code&gt;{Plumber}&lt;/code&gt; by adding special comments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Deploy Easily&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use Rstudio connect or Docker to host your API.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;extract-computation-using-database&#34;&gt;Extract computation: Using Database&lt;/h2&gt;
+&lt;p&gt;Many may ask, **Why use Data base?&amp;quot;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ui &amp;lt;- fluidPage(....)
 
+data &amp;lt;- readRDS(&amp;quot;./1gb-file.rds&amp;quot;)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure id=&#34;figure-the-template-is-mobile-first-with-a-responsive-design-to-ensure-that-your-site-looks-stunning-on-every-device&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/master/academic.png&#34; data-caption=&#34;The template is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34;&gt;
-
-
-  &lt;img src=&#34;https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/master/academic.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
+Server &amp;lt;- function(input, output, session){
   
-  
-  &lt;figcaption&gt;
-    The template is mobile first with a responsive design to ensure that your site looks stunning on every device.
-  &lt;/figcaption&gt;
+  output$search_result &amp;lt;- ... data %&amp;gt;% filter(value &amp;gt; input$query_value)
+}
 
+shinyApp(ui = ui, server = server)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Because It reduces the amount of RAM used when you have many users. Its easy sinec you use the &lt;code&gt;dplyr&lt;/code&gt; package to manipulate the database.&lt;/p&gt;
+&lt;h2 id=&#34;set-architecture&#34;&gt;Set Architecture&lt;/h2&gt;
+&lt;p&gt;When deploying in the shiny server open source, you can use &lt;strong&gt;Ansible&lt;/strong&gt; to provision the infrastructure.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sentiment analysis</title>
+      <link>https://victormandela.netlify.app/post/sentiment-analysis/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://victormandela.netlify.app/post/sentiment-analysis/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Data set&lt;/strong&gt;: &lt;a href=&#34;https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-05-05/readme.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Animal Crossing user reviews from #TidyTuesday dataset&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Task&lt;/strong&gt;: Sentimental Analysis - Using the text from User reviews predict user ratings.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Expected results&lt;/strong&gt;: To check how positive or negative the user review is based on their comments.&lt;/p&gt;
+&lt;h2 id=&#34;explore-the-data&#34;&gt;Explore the data&lt;/h2&gt;
+&lt;p&gt;Let explore the data.&lt;/p&gt;
+&lt;p&gt;We can see columns of the usernames, their reviews on how they feel the game was, the rating score grade, and the date they posted the review.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(tidyverse)
 
-&lt;/figure&gt;
+user_reviews &amp;lt;- readr::read_tsv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-05-05/user_reviews.tsv&#39;)
 
-&lt;h2 id=&#34;get-started&#34;&gt;Get Started&lt;/h2&gt;
+user_reviews %&amp;gt;%
+  count(grade) %&amp;gt;%
+  ggplot(aes(grade, n)) +
+  geom_col(fill = &amp;quot;midnightblue&amp;quot;, alpha = 0.7)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://victormandela.netlify.app/post/2021-01-17-sentiment-analysis/index.en_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;2400&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Lots of people give scores of zero, and lots of people give scores of 10. This does not look like a nice distribution for predicting a not-even-really-continuous quantity like this &lt;code&gt;grade&lt;/code&gt;, so we&amp;rsquo;ll convert these user scores to a label, good vs. bad user reviews, and build a classification model.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## not run here
+user_reviews %&amp;gt;% 
+  filter(grade &amp;gt; 8) %&amp;gt;% 
+  sample_n(5) %&amp;gt;% 
+  pull(text)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We definitely saw some evidence of scraping problems when looking at the review text. We will remove at least the final &lt;code&gt;&amp;quot;Expand&amp;quot;&lt;/code&gt; from the reviews, and create a new categorical &lt;code&gt;rating&lt;/code&gt; variable.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;reviews_parsed &amp;lt;- user_reviews %&amp;gt;%
+  mutate(text = str_remove(text, &amp;quot;Expand$&amp;quot;)) %&amp;gt;%
+  mutate(rating = case_when(grade &amp;gt; 7 ~ &amp;quot;good&amp;quot;,
+                            TRUE ~ &amp;quot;bad&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What is the distribution of words per review?&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(tidytext)
+
+words_per_review &amp;lt;- reviews_parsed %&amp;gt;%
+  unnest_tokens(word, text) %&amp;gt;%
+  count(user_name, name = &amp;quot;total_words&amp;quot;)
+
+words_per_review %&amp;gt;%
+  ggplot(aes(total_words)) +
+  geom_histogram(fill = &amp;quot;midnightblue&amp;quot;, alpha = 0.8)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://victormandela.netlify.app/post/2021-01-17-sentiment-analysis/index.en_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;2400&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t believe this can be a true, natural distribution of words per review. That sharp drop in the distribution looks very strange and I believe is a sign of some problem with the data generation process (i.e. a scraping problem). That&amp;rsquo;s life sometimes! Data is never perfect and sometimes we have to do the best we can with the data available. If this was my own project from start-to-finish, I would go back to the scraping and see if I could make any improvements at that stage.&lt;/p&gt;
+&lt;p&gt;For now, let&amp;rsquo;s forge ahead and see what we can learn. There are lots more great examples of #TidyTuesday EDA out there to explore, &lt;a href=&#34;https://twitter.com/justynapawlata/status/1257718507002826752&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;including more text mining&lt;/a&gt;!&lt;/p&gt;
+&lt;h2 id=&#34;build-a-model&#34;&gt;Build a model&lt;/h2&gt;
+&lt;p&gt;We start by loading the tidymodels metapackage, that helps us in splitting our data into training and testing sets.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(tidymodels)
+
+set.seed(123)
+review_split &amp;lt;- initial_split(reviews_parsed, strata = rating)
+review_train &amp;lt;- training(review_split)
+review_test &amp;lt;- testing(review_split)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, let&amp;rsquo;s &lt;strong&gt;preprocess&lt;/strong&gt; our data to get it ready for modeling. We can use specialized steps from &lt;a href=&#34;https://tidymodels.github.io/textrecipes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;textrecipes&lt;/a&gt;, along with the general recipe steps.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(textrecipes)
+library(stopwords)
+
+review_rec &amp;lt;- recipe(rating ~ text, data = review_train) %&amp;gt;%
+  step_tokenize(text) %&amp;gt;%
+  textrecipes::step_stopwords(text) %&amp;gt;%
+  step_tokenfilter(text, max_tokens = 500) %&amp;gt;%
+  step_tfidf(text) %&amp;gt;%
+  step_normalize(all_predictors())
+
+review_prep &amp;lt;- prep(review_rec)
+
+review_prep
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Data Recipe
+## 
+## Inputs:
+## 
+##       role #variables
+##    outcome          1
+##  predictor          1
+## 
+## Training data contained 2250 data points and no missing data.
+## 
+## Operations:
+## 
+## Tokenization for text [trained]
+## Stop word removal for text [trained]
+## Text filtering for text [trained]
+## Term frequency-inverse document frequency with text [trained]
+## Centering and scaling for tfidf_text_0, tfidf_text_1, ... [trained]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let&amp;rsquo;s walk through the steps in this recipe, which are what I consider sensible defaults for a first attempt at training a text classification model such as a sentiment analysis model.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;👉 &lt;a href=&#34;https://wowchemy.com/templates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Create a new site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;📚 &lt;a href=&#34;https://wowchemy.com/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Personalize your site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💬 &lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chat with the &lt;strong&gt;Wowchemy community&lt;/strong&gt;&lt;/a&gt; or &lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Hugo community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🐦 Twitter: &lt;a href=&#34;https://twitter.com/wowchemy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@wowchemy&lt;/a&gt; &lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@GeorgeCushen&lt;/a&gt; &lt;a href=&#34;https://twitter.com/search?q=%28%23MadeWithWowchemy%20OR%20%23MadeWithAcademic%29&amp;amp;src=typed_query&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#MadeWithWowchemy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💡 &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt; for &lt;em&gt;Wowchemy&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;⬆️ &lt;strong&gt;Updating Wowchemy?&lt;/strong&gt; View the &lt;a href=&#34;https://wowchemy.com/docs/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://wowchemy.com/updates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;First, we must tell the &lt;code&gt;recipe()&lt;/code&gt; what our model is going to be (using a formula here) and what data we are using.&lt;/li&gt;
+&lt;li&gt;Next, we tokenize our text, with the default tokenization into single words.&lt;/li&gt;
+&lt;li&gt;Next, we remove stop words (again, just the default set).&lt;/li&gt;
+&lt;li&gt;It wouldn&amp;rsquo;t be practical to keep all the tokens from this whole dataset in our model, so we can filter down to only keep, in this case, the top 500 most-used tokens (after removing stop words). This is a pretty dramatic cut and keeping more tokens would be a good next step in improving this model.&lt;/li&gt;
+&lt;li&gt;We need to decide on some kind of weighting for these tokens next, either something like term frequency or, what we used here, &lt;a href=&#34;https://www.tidytextmining.com/tfidf.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tf-idf&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Finally, we center and scale (i.e. normalize) all the newly created tf-idf values because the model we are going to use is sensitive to this.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;crowd-funded-open-source-software&#34;&gt;Crowd-funded open-source software&lt;/h2&gt;
-&lt;p&gt;To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.&lt;/p&gt;
-&lt;h3 id=&#34;-click-here-to-become-a-sponsor-and-help-support-wowchemys-future-httpswowchemycomplans&#34;&gt;&lt;a href=&#34;https://wowchemy.com/plans/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;❤️ Click here to become a sponsor and help support Wowchemy&amp;rsquo;s future ❤️&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;As a token of appreciation for sponsoring, you can &lt;strong&gt;unlock &lt;a href=&#34;https://wowchemy.com/plans/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these&lt;/a&gt; awesome rewards and extra features 🦄✨&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-admin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to automatically import publications from BibTeX&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;inspiration&#34;&gt;Inspiration&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://wowchemy.com/user-stories/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://wowchemy.com/docs/page-builder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://wowchemy.com/docs/import/jupyter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://wowchemy.com/docs/install-locally/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://wowchemy.com/docs/customization/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 34+ language packs including English, 中文, and Português&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;p&gt;Wowchemy and its templates come with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Alternatively, visitors can choose their preferred mode - click the moon icon in the top right of the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demo&lt;/a&gt; to see it in action! Day/night mode can also be disabled by the site admin in &lt;code&gt;params.toml&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/customization&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully customizable.&lt;/p&gt;
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+&lt;p&gt;Before using &lt;code&gt;prep()&lt;/code&gt; these steps have been defined but not actually run or implemented. The &lt;code&gt;prep()&lt;/code&gt; function is where everything gets evaluated.&lt;/p&gt;
+&lt;p&gt;Now it&amp;rsquo;s time to &lt;strong&gt;specify&lt;/strong&gt; our model. Here we can set up the model specification for lasso regression with &lt;code&gt;penalty = tune()&lt;/code&gt; since we don&amp;rsquo;t yet know the best value for the regularization parameter and &lt;code&gt;mixture = 1&lt;/code&gt; for lasso. In my experience, the lasso has proved to be a good baseline for text modeling. (And sometimes it is hard to do much better!)&lt;/p&gt;
+&lt;p&gt;I am using a &lt;a href=&#34;https://tidymodels.github.io/workflows/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;workflow()&lt;/code&gt;&lt;/a&gt; in this example for convenience; these are objects that can help you manage modeling pipelines more easily, with pieces that fit together like Lego blocks. This &lt;code&gt;workflow()&lt;/code&gt; contains both the recipe and the model.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;lasso_spec &amp;lt;- logistic_reg(penalty = tune(), mixture = 1) %&amp;gt;%
+  set_engine(&amp;quot;glmnet&amp;quot;)
+
+lasso_wf &amp;lt;- workflow() %&amp;gt;%
+  add_recipe(review_rec) %&amp;gt;%
+  add_model(lasso_spec)
+
+lasso_wf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## == Workflow ====================================================================
+## Preprocessor: Recipe
+## Model: logistic_reg()
+## 
+## -- Preprocessor ----------------------------------------------------------------
+## 5 Recipe Steps
+## 
+## * step_tokenize()
+## * step_stopwords()
+## * step_tokenfilter()
+## * step_tfidf()
+## * step_normalize()
+## 
+## -- Model -----------------------------------------------------------------------
+## Logistic Regression Model Specification (classification)
+## 
+## Main Arguments:
+##   penalty = tune()
+##   mixture = 1
+## 
+## Computational engine: glmnet
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;tune-model-parameters&#34;&gt;Tune model parameters&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s get ready to &lt;a href=&#34;https://www.tidymodels.org/start/tuning/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tune&lt;/a&gt; the lasso model! First, we need a set of possible regularization parameters to try.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;lambda_grid &amp;lt;- grid_regular(penalty(), levels = 40)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, we need a set of resampled data to fit and evaluate all these models.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;set.seed(123)
+review_folds &amp;lt;- bootstraps(review_train, strata = rating)
+review_folds
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # Bootstrap sampling using stratification 
+## # A tibble: 25 x 2
+##    splits             id         
+##    &amp;lt;list&amp;gt;             &amp;lt;chr&amp;gt;      
+##  1 &amp;lt;split [2.2K/812]&amp;gt; Bootstrap01
+##  2 &amp;lt;split [2.2K/850]&amp;gt; Bootstrap02
+##  3 &amp;lt;split [2.2K/814]&amp;gt; Bootstrap03
+##  4 &amp;lt;split [2.2K/814]&amp;gt; Bootstrap04
+##  5 &amp;lt;split [2.2K/853]&amp;gt; Bootstrap05
+##  6 &amp;lt;split [2.2K/840]&amp;gt; Bootstrap06
+##  7 &amp;lt;split [2.2K/816]&amp;gt; Bootstrap07
+##  8 &amp;lt;split [2.2K/826]&amp;gt; Bootstrap08
+##  9 &amp;lt;split [2.2K/804]&amp;gt; Bootstrap09
+## 10 &amp;lt;split [2.2K/809]&amp;gt; Bootstrap10
+## # ... with 15 more rows
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now we can put it all together and implement the tuning. We can set specific metrics to compute during tuning with &lt;code&gt;metric_set()&lt;/code&gt;. Let&amp;rsquo;s look at AUC, positive predictive value, and negative predictive value so we can understand if one class is harder to predict than another.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;doParallel::registerDoParallel()
+
+set.seed(2020)
+lasso_grid &amp;lt;- tune_grid(
+  lasso_wf,
+  resamples = review_folds,
+  grid = lambda_grid,
+  metrics = metric_set(roc_auc, ppv, npv)
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once we have our tuning results, we can examine them in detail.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;lasso_grid %&amp;gt;%
+  collect_metrics()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 120 x 7
+##     penalty .metric .estimator  mean     n std_err .config              
+##       &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;   &amp;lt;chr&amp;gt;      &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt;   &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;                
+##  1 1.00e-10 npv     binary     0.740    25 0.00518 Preprocessor1_Model01
+##  2 1.00e-10 ppv     binary     0.864    25 0.00302 Preprocessor1_Model01
+##  3 1.00e-10 roc_auc binary     0.878    25 0.00276 Preprocessor1_Model01
+##  4 1.80e-10 npv     binary     0.740    25 0.00518 Preprocessor1_Model02
+##  5 1.80e-10 ppv     binary     0.864    25 0.00302 Preprocessor1_Model02
+##  6 1.80e-10 roc_auc binary     0.878    25 0.00276 Preprocessor1_Model02
+##  7 3.26e-10 npv     binary     0.740    25 0.00518 Preprocessor1_Model03
+##  8 3.26e-10 ppv     binary     0.864    25 0.00302 Preprocessor1_Model03
+##  9 3.26e-10 roc_auc binary     0.878    25 0.00276 Preprocessor1_Model03
+## 10 5.88e-10 npv     binary     0.740    25 0.00518 Preprocessor1_Model04
+## # ... with 110 more rows
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Visualization is often more helpful to understand model performance.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;lasso_grid %&amp;gt;%
+  collect_metrics() %&amp;gt;%
+  ggplot(aes(penalty, mean, color = .metric)) +
+  geom_line(size = 1.5, show.legend = FALSE) +
+  facet_wrap(~.metric) +
+  scale_x_log10()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://victormandela.netlify.app/post/2021-01-17-sentiment-analysis/index.en_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;3000&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This shows us a lot. We see clearly that AUC and PPV have benefited from the regularization and we could identify the best value of &lt;code&gt;penalty&lt;/code&gt; for each of those metrics. The same is not true for NPV. One class (the happy comments) is harder to predict than the other. It might be worth including more tokens in our model, based on this plot.&lt;/p&gt;
+&lt;h2 id=&#34;choose-the-final-model&#34;&gt;Choose the final model&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s keep our model as is for now, and choose a final model based on AUC. We can use &lt;code&gt;select_best()&lt;/code&gt; to find the best AUC and then update our workflow &lt;code&gt;lasso_wf&lt;/code&gt; with this value.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;best_auc &amp;lt;- lasso_grid %&amp;gt;%
+  select_best(&amp;quot;roc_auc&amp;quot;)
+
+best_auc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 1 x 2
+##   penalty .config              
+##     &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;                
+## 1 0.00889 Preprocessor1_Model32
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;final_lasso &amp;lt;- finalize_workflow(lasso_wf, best_auc)
+
+final_lasso
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## == Workflow ====================================================================
+## Preprocessor: Recipe
+## Model: logistic_reg()
+## 
+## -- Preprocessor ----------------------------------------------------------------
+## 5 Recipe Steps
+## 
+## * step_tokenize()
+## * step_stopwords()
+## * step_tokenfilter()
+## * step_tfidf()
+## * step_normalize()
+## 
+## -- Model -----------------------------------------------------------------------
+## Logistic Regression Model Specification (classification)
+## 
+## Main Arguments:
+##   penalty = 0.00888623816274339
+##   mixture = 1
+## 
+## Computational engine: glmnet
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is our tuned, finalized workflow (but it is not fit yet). One of the things we can do when we start to fit this finalized workflow on the whole training set is to see what the most important variables are using the &lt;a href=&#34;https://koalaverse.github.io/vip/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vip&lt;/a&gt; package.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(vip)
+
+final_lasso %&amp;gt;%
+  fit(review_train) %&amp;gt;%
+  pull_workflow_fit() %&amp;gt;%
+  vi(lambda = best_auc$penalty) %&amp;gt;%
+  group_by(Sign) %&amp;gt;%
+  top_n(20, wt = abs(Importance)) %&amp;gt;%
+  ungroup() %&amp;gt;%
+  mutate(Importance = abs(Importance),
+         Variable = str_remove(Variable, &amp;quot;tfidf_text_&amp;quot;),
+         Variable = fct_reorder(Variable, Importance)) %&amp;gt;%
+  ggplot(aes(x = Importance, y = Variable, fill = Sign)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~Sign, scales = &amp;quot;free_y&amp;quot;) +
+  labs(y = NULL)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://victormandela.netlify.app/post/2021-01-17-sentiment-analysis/index.en_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;2400&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;People who are happy with Animal Crossing like to talk about how relaxing, fantastic, enjoyable, and great it is, and also talk in their reviews about the &amp;ldquo;review bombing&amp;rdquo; of the negative reviews. Notice that many of the words from the negative reviews are specifically used to talk about the multiplayer experience (it&amp;rsquo;s boring for the second player, second player cannot do &amp;ldquo;anything&amp;rdquo; or move the story forward, cooperative/coop play doesn&amp;rsquo;t work well, etc). These users want a fix and they declare Nintendo greedy for the one-island-per-console play.&lt;/p&gt;
+&lt;p&gt;Finally, let&amp;rsquo;s return to our test data. The tune package has a function &lt;code&gt;last_fit()&lt;/code&gt; which is nice for situations when you have tuned and finalized a model or workflow and want to fit it one last time on your training data and evaluate it on your testing data. You only have to pass this function your finalized model/workflow and your split.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;review_final &amp;lt;- last_fit(final_lasso, review_split)
+
+review_final %&amp;gt;%
+  collect_metrics()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 2 x 4
+##   .metric  .estimator .estimate .config             
+##   &amp;lt;chr&amp;gt;    &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;               
+## 1 accuracy binary         0.892 Preprocessor1_Model1
+## 2 roc_auc  binary         0.941 Preprocessor1_Model1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We did not overfit during our tuning process, and the overall accuracy is not bad. Let&amp;rsquo;s create a confusion matrix for the testing data.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;review_final %&amp;gt;%
+  collect_predictions() %&amp;gt;%
+  conf_mat(rating, .pred_class)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##           Truth
+## Prediction bad good
+##       bad  449   55
+##       good  26  219
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Although our overall accuracy isn&amp;rsquo;t so bad, we find that it is easier to detect the negative reviews than the positive ones.&lt;/p&gt;
 </description>
     </item>
     

@@ -1,0 +1,63 @@
+---
+title: Statistics Calculator
+author: Victor Mandela
+date: '2021-01-18'
+slug: statistics-calculator
+categories:
+  - R
+tags:
+  - Dashboards
+  - Shiny Apps
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-18T00:47:06+03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+runtime: shiny
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  fig.align = "center",
+  out.width='100%'
+)
+
+library(shiny)
+library(widgetframe)
+library(knitr)
+```
+
+![Inferential Statistics](Stats.jpg)
+
+If you have developed and deployed a Shiny app and would like to embed it in blogdown, follow these steps:
+
+1. create a new post as usual
+1. add `runtime: shiny` (and `output: html_document` if it is not already included) in the YAML metadata
+1. insert the following HTML code in the body of the post:
+
+```
+<iframe height="800" width="100%" frameborder="no" src="https://josabusmart.shinyapps.io/InferentialStatistics/"> </iframe>
+```
+
+You should change the URL with the URL of your deployed Shiny app (after `src=`, do not forget that the URL should start with `http://` or `https://` and should be surrounded by `"`). Moreover, you can modify the height, the width and include or not a frame border with the corresponding tags.
+
+Here is an example of the result with one of my Shiny app ([link](https://josabusmart.shinyapps.io/InferentialStatistics/) to the app):
+
+<iframe height="800" width="100%" frameborder="no" src="https://josabusmart.shinyapps.io/InferentialStatistics/"> </iframe>
+
+<br>
+
+*Note that the app may not work if it has hit the monthly usage limit. Try again later if that is the case.*
+
+
+If you encounter an issue, try loading the following packages in the body of your new post: `shiny`, `widgetframe` (you can load a package with the command `library(widgetframe)`). If one of the package is not installed yet, you can do it with the command `install.packages("widgetframe")`.
+
+I hope this article helped you to embed a Shiny app in your website.
+
+As always, if you have a question or a suggestion related to the topic covered in this article, please add it as a comment so other readers can benefit from the discussion.

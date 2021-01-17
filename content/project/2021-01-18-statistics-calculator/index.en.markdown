@@ -1,17 +1,17 @@
 ---
-title: "Inferential Statistics Dashboard"
-author: "Victor Mandela"
-date: '2021-01-17'
-slug: inferential-statistics-dashboard
-categories: R
+title: Statistics Calculator
+author: Victor Mandela
+date: '2021-01-18'
+slug: statistics-calculator
+categories:
+  - R
 tags:
-- Dashboards
-- Shiny Apps
-- Academic
+  - Dashboards
+  - Shiny Apps
 subtitle: ''
 summary: ''
 authors: []
-lastmod: '2021-01-17T23:21:44+03:00'
+lastmod: '2021-01-18T00:47:06+03:00'
 featured: no
 image:
   caption: ''
@@ -19,18 +19,10 @@ image:
   preview_only: no
 projects: []
 runtime: shiny
-output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(
-  fig.align = "center",
-  out.width='100%'
-)
 
-library(shiny)
-library(widgetframe)
-```
+
 
 ![Inferential Statistics](Stats.jpg){width=50%}
 
@@ -60,4 +52,3 @@ If you encounter an issue, try loading the following packages in the body of you
 I hope this article helped you to embed a Shiny app in your website.
 
 As always, if you have a question or a suggestion related to the topic covered in this article, please add it as a comment so other readers can benefit from the discussion.
-

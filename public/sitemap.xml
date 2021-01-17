@@ -3,21 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://victormandela.netlify.app/courses/example/example1/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormandela.netlify.app/courses/example/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormandela.netlify.app/courses/example/example2/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://victormandela.netlify.app/talk/example-talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
@@ -33,23 +18,48 @@
   </url>
   
   <url>
+    <loc>https://victormandela.netlify.app/tag/academic/</loc>
+    <lastmod>2021-01-17T14:39:45+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victormandela.netlify.app/categories/</loc>
+    <lastmod>2021-01-17T14:39:45+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victormandela.netlify.app/tag/deep-learning/</loc>
+    <lastmod>2021-01-17T14:14:46+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victormandela.netlify.app/post/how-to-scale-shiny-dashboards/</loc>
+    <lastmod>2021-01-17T14:39:45+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://victormandela.netlify.app/post/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-17T14:39:45+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://victormandela.netlify.app/post/writing-technical-content/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <loc>https://victormandela.netlify.app/category/r/</loc>
+    <lastmod>2021-01-17T14:39:45+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://victormandela.netlify.app/courses/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <loc>https://victormandela.netlify.app/post/sentiment-analysis/</loc>
+    <lastmod>2021-01-17T14:14:46+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victormandela.netlify.app/tags/</loc>
+    <lastmod>2021-01-17T14:39:45+03:00</lastmod>
   </url>
   
   <url>
     <loc></loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -78,18 +88,8 @@
   </url>
   
   <url>
-    <loc>https://victormandela.netlify.app/tags/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc></loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormandela.netlify.app/post/jupyter/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -100,71 +100,6 @@
   <url>
     <loc>https://victormandela.netlify.app/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormandela.netlify.app/tag/deep-learning/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormandela.netlify.app/tag/demo/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormandela.netlify.app/project/example/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormandela.netlify.app/project/external-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormandela.netlify.app/project/internal-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormandela.netlify.app/project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormandela.netlify.app/tag/academic/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormandela.netlify.app/categories/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormandela.netlify.app/category/demo/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormandela.netlify.app/post/getting-started/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc></loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormandela.netlify.app/tag/%E5%BC%80%E6%BA%90/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormandela.netlify.app/category/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
