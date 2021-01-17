@@ -19,12 +19,15 @@ image:
   preview_only: no
 projects: []
 runtime: shiny
+output:
+  blogdown::html_page:
+    toc: false
 ---
 
 
 
 
-![Inferential Statistics](Stats.jpg){width=50%}
+![Inferential Statistics](Stats.jpg)
 
 If you have developed and deployed a Shiny app and would like to embed it in blogdown, follow these steps:
 
