@@ -1,5 +1,5 @@
 ---
-title: "sentiment analysis"
+title: "Sentiment analysis"
 author: "Victor Mandela"
 date: '2021-01-17'
 slug: sentiment-analysis
@@ -27,15 +27,11 @@ projects: []
 **Expected results**: To check how positive or negative the user review is based on their comments.
 
 
-
-</br>
-
-Here is the code I used in the video, for those who prefer reading instead of or in addition to video.
-
-
 ## Explore the data
 
-Our modeling goal is to predict the rating for [Animal Crossing user reviews from this week's #TidyTuesday dataset](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-05-05/readme.md) from the text in the review. This is what is typically called a sentiment analysis model, and it's a common real-world problem! Let's get started by looking at the user review data.
+Let explore the data.
+
+We can see columns of the usernames, their reviews on how they feel the game was, the rating score grade, and the date they posted the review.
 
 
 
@@ -50,7 +46,7 @@ user_reviews %>%
   geom_col(fill = "midnightblue", alpha = 0.7)
 ```
 
-<img src="/post/2021-01-17-sentiment-analysis/index.en_files/figure-html/unnamed-chunk-2-1.png" width="2400" />
+<img src="/post/2021-01-17-sentiment-analysis/index.en_files/figure-html/unnamed-chunk-1-1.png" width="2400" />
 
 Lots of people give scores of zero, and lots of people give scores of 10. This does not look like a nice distribution for predicting a not-even-really-continuous quantity like this `grade`, so we'll convert these user scores to a label, good vs. bad user reviews, and build a classification model.
 
@@ -89,7 +85,7 @@ words_per_review %>%
   geom_histogram(fill = "midnightblue", alpha = 0.8)
 ```
 
-<img src="/post/2021-01-17-sentiment-analysis/index.en_files/figure-html/unnamed-chunk-5-1.png" width="2400" />
+<img src="/post/2021-01-17-sentiment-analysis/index.en_files/figure-html/unnamed-chunk-4-1.png" width="2400" />
 
 I don't believe this can be a true, natural distribution of words per review. That sharp drop in the distribution looks very strange and I believe is a sign of some problem with the data generation process (i.e. a scraping problem). That's life sometimes! Data is never perfect and sometimes we have to do the best we can with the data available. If this was my own project from start-to-finish, I would go back to the scraping and see if I could make any improvements at that stage. 
 
@@ -291,7 +287,7 @@ lasso_grid %>%
   scale_x_log10()
 ```
 
-<img src="/post/2021-01-17-sentiment-analysis/index.en_files/figure-html/unnamed-chunk-13-1.png" width="3000" />
+<img src="/post/2021-01-17-sentiment-analysis/index.en_files/figure-html/unnamed-chunk-12-1.png" width="3000" />
 
 This shows us a lot. We see clearly that AUC and PPV have benefited from the regularization and we could identify the best value of `penalty` for each of those metrics. The same is not true for NPV. One class (the happy comments) is harder to predict than the other. It might be worth including more tokens in our model, based on this plot.
 
@@ -366,7 +362,7 @@ final_lasso %>%
   labs(y = NULL)
 ```
 
-<img src="/post/2021-01-17-sentiment-analysis/index.en_files/figure-html/unnamed-chunk-15-1.png" width="2400" />
+<img src="/post/2021-01-17-sentiment-analysis/index.en_files/figure-html/unnamed-chunk-14-1.png" width="2400" />
 
 People who are happy with Animal Crossing like to talk about how relaxing, fantastic, enjoyable, and great it is, and also talk in their reviews about the "review bombing" of the negative reviews. Notice that many of the words from the negative reviews are specifically used to talk about the multiplayer experience (it's boring for the second player, second player cannot do "anything" or move the story forward, cooperative/coop play doesn't work well, etc). These users want a fix and they declare Nintendo greedy for the one-island-per-console play.
 
