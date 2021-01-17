@@ -42,18 +42,12 @@ theme_set(theme_plex())
 
 **Expected results**: To check how positive or negative the user review is based on their comments.
 
-```{r include=FALSE}
-blogdown::shortcode("youtube", "whE85O1XCkg")
-```
-
-</br>
-
-Here is the code I used in the video, for those who prefer reading instead of or in addition to video.
-
 
 ## Explore the data
 
-Our modeling goal is to predict the rating for [Animal Crossing user reviews from this week's #TidyTuesday dataset](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-05-05/readme.md) from the text in the review. This is what is typically called a sentiment analysis model, and it's a common real-world problem! Let's get started by looking at the user review data.
+Let explore the data.
+
+We can see columns of the usernames, their reviews on how they feel the game was, the rating score grade, and the date they posted the review.
 
 
 ```{r}
