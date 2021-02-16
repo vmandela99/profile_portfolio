@@ -27,6 +27,8 @@ output:
 
 
 
+
+
 ![Inferential Statistics](Stats.jpg)
 
 If you have developed and deployed a Shiny app and would like to embed it in blogdown, follow these steps:
@@ -35,7 +37,8 @@ If you have developed and deployed a Shiny app and would like to embed it in blo
 1. add `runtime: shiny` (and `output: html_document` if it is not already included) in the YAML metadata
 1. insert the following HTML code in the body of the post:
 
-```
+
+```r
 <iframe height="800" width="100%" frameborder="no" src="https://josabusmart.shinyapps.io/InferentialStatistics/"> </iframe>
 ```
 

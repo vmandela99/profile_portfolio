@@ -55,7 +55,7 @@ shinyApp(ui = ui, server = server)
 
 ## Example1 of shiny app
 
-```{r}
+```{r eval=FALSE, include=TRUE}
 library(shiny)
 library(widgetframe)
 
@@ -79,7 +79,7 @@ We want to go an extra mile an add a text that asks a question. This is possible
 
 Our full out put that is diplayed is contained in the server using the render text function. Inside of that you can use *paste* to create a longer character string. And if add *input$name* you can access the name added using text input. The text is assigned to an output object that will be used in the ui to display.
 
-```{r}
+```{r eval=FALSE, include=TRUE}
 library(shiny)
 library(widgetframe)
 
