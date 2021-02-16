@@ -27,19 +27,19 @@ First,
 
 1. load the library using the shiny.
 
-```{r message=FALSE, warning=FALSE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 library(shiny)
 ```
 
 2. Create ui using the html function
 
-```{r}
+```{r eval=FALSE, include=TRUE}
 ui <- fluidPage()
 ```
 
 3. Define a custom function to create the server
 
-```{r}
+```{r eval=FALSE, include=TRUE}
 server <- function(input,
                    output,
                    session){
@@ -49,7 +49,7 @@ server <- function(input,
 
 4. finally run your app.
 
-```{r}
+```{r eval=FALSE, include=TRUE}
 shinyApp(ui = ui, server = server)
 ```
 
