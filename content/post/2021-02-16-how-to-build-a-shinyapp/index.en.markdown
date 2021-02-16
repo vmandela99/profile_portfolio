@@ -1,14 +1,16 @@
 ---
-title: Getting started with shinyApps
-author: Victor Mandela
+title: "How to build a ShinyApp"
+author: "Victor Mandela"
 date: '2021-02-16'
-slug: getting-started-with-shinyapps
-categories: []
-tags: []
+slug: how-to-build-a-shinyapp
+categories: R
+tags:
+- Shiny Apps
+- Dashboards
 subtitle: ''
 summary: ''
 authors: []
-lastmod: '2021-02-16T13:33:15+03:00'
+lastmod: '2021-02-16T14:59:44+03:00'
 featured: no
 image:
   caption: ''
@@ -19,27 +21,30 @@ projects: []
 
 ## Building a "Hello world shinyApp"
 
-We begin to demostrate the building blocks of a shinyApp.
+We begin to demonstrate the building blocks of a shinyApp.
 
-An App needs a *User interface (ui)* and a server. The majic about the ~shiny package~ is that it can create both of this within R, plus run your app using an additionational shiny function.
+An App needs a *User interface (ui)* and a server. The majic about the *shiny package* is that it can create both of this within R, plus run your app using an additionational shiny function.
 
 First,
 
 1. load the library using the shiny.
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+```r
 library(shiny)
 ```
 
 2. Create ui using the html function
 
-```{r eval=FALSE, include=TRUE}
+
+```r
 ui <- fluidPage()
 ```
 
 3. Define a custom function to create the server
 
-```{r eval=FALSE, include=TRUE}
+
+```r
 server <- function(input,
                    output,
                    session){
@@ -49,13 +54,15 @@ server <- function(input,
 
 4. finally run your app.
 
-```{r eval=FALSE, include=TRUE}
+
+```r
 shinyApp(ui = ui, server = server)
 ```
 
 ## Example1 of shiny app
 
-```{r eval=FALSE, include=TRUE}
+
+```r
 library(shiny)
 library(widgetframe)
 
@@ -79,7 +86,8 @@ We want to go an extra mile an add a text that asks a question. This is possible
 
 Our full out put that is diplayed is contained in the server using the render text function. Inside of that you can use *paste* to create a longer character string. And if add *input$name* you can access the name added using text input. The text is assigned to an output object that will be used in the ui to display.
 
-```{r eval=FALSE, include=TRUE}
+
+```r
 library(shiny)
 library(widgetframe)
 
@@ -101,4 +109,5 @@ shinyApp(ui = ui, server = server)
 
 
 You did it a text that uses a text input!!
+
 
