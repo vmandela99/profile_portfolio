@@ -20,8 +20,7 @@ content:
   form:
     provider: formspree
     formspree:
-      id: "https://formspree.io/f/mgepbpon" 
-      method: "POST"
+      id: https://formspree.io/f/mgepbpon 
     netlify:
       # Enable CAPTCHA challenge to reduce spam?
       captcha: true
