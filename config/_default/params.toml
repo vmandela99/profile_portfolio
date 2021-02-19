@@ -203,18 +203,12 @@ plugins_js  = []
 ############################
 ## Comments
 ############################
-#[comments]
+[comments]
    #comments provider:
      #0: Disabled
      #1: Disqus (https://disqus.com)
      #2: Commento (https://commento.io)
-  #engine = 1
-[comments]
-  # Comment provider:
-  #   "": Disabled
-  #   "disqus": Disqus (https://disqus.com)
-  #   "commento": Commento (https://commento.io)
-  provider = "disqus"
+  engine = 1
 
   # Which page types are commentable?
   commentable = {page = true, post = true, project = true}
