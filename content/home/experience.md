@@ -53,8 +53,8 @@ experience:
     company: Open Capital Advisors
     company_url: ''
     location: Nairobi
-    date_start: '2018-12-01'
-    date_end: '2016-11-01'
+    date_start: '2016-11-01'
+    date_end: '2018-12-01'
     description: ""
   - title: Intern, Risk Analyst
     company: Equity Bank Limited
