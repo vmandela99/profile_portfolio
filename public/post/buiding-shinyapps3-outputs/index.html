@@ -1,0 +1,1274 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Victor Mandela">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="OutPuts in ShinyApps Outputs are build in shinyApps based on inputs. We use render functiond to create a variety of outputs ranging from plots renderPlot, tables renderTable and images renderImage.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://victormandela.netlify.app/post/buiding-shinyapps3-outputs/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#ff3860">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.45956ecd3d86ff56ea11864e41bcc981.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://victormandela.netlify.app/post/buiding-shinyapps3-outputs/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@VictorMandela8">
+  <meta property="twitter:creator" content="@VictorMandela8">
+  
+  <meta property="og:site_name" content="Victor Mandela">
+  <meta property="og:url" content="https://victormandela.netlify.app/post/buiding-shinyapps3-outputs/">
+  <meta property="og:title" content="Buiding shinyApps3: Outputs | Victor Mandela">
+  <meta property="og:description" content="OutPuts in ShinyApps Outputs are build in shinyApps based on inputs. We use render functiond to create a variety of outputs ranging from plots renderPlot, tables renderTable and images renderImage."><meta property="og:image" content="https://victormandela.netlify.app/post/buiding-shinyapps3-outputs/Featured.jpg">
+  <meta property="twitter:image" content="https://victormandela.netlify.app/post/buiding-shinyapps3-outputs/Featured.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-02-16T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-02-16T16:45:31&#43;03:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://victormandela.netlify.app/post/buiding-shinyapps3-outputs/"
+  },
+  "headline": "Buiding shinyApps3: Outputs",
+  
+  "image": [
+    "https://victormandela.netlify.app/post/buiding-shinyapps3-outputs/Featured.jpg"
+  ],
+  
+  "datePublished": "2021-02-16T00:00:00Z",
+  "dateModified": "2021-02-16T16:45:31+03:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Victor Mandela"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Victor Mandela",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://victormandela.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "OutPuts in ShinyApps Outputs are build in shinyApps based on inputs. We use render functiond to create a variety of outputs ranging from plots renderPlot, tables renderTable and images renderImage."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Buiding shinyApps3: Outputs | Victor Mandela</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.1df0392aab543464b23a85146803aaf2.js"></script>
+
+  
+
+<aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Victor Mandela</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Victor Mandela</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Buiding shinyApps3: Outputs</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Feb 16, 2021
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/r/">R</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 236px; max-height: 236px;">
+  <div style="position: relative">
+    <img src="/post/buiding-shinyapps3-outputs/Featured.jpg" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="outputs-in-shinyapps">OutPuts in ShinyApps</h2>
+<p>Outputs are build in shinyApps based on inputs. We use render functiond to create a variety of outputs ranging from plots <strong>renderPlot</strong>, tables <strong>renderTable</strong> and images <strong>renderImage</strong>.</p>
+<h3 id="add-a-table-output">Add a table output</h3>
+<hr>
+<p>In order to add any output to a Shiny app, you need to:</p>
+<ul>
+<li>Create the output (plot, table, text, etc.).</li>
+<li>Render the output object using the appropriate *render___* function.</li>
+<li>Assign the rendered object to <em>output$x</em>.</li>
+<li>Add the output to the UI using the appropriate <em>___Output</em> function.</li>
+<li>In this example, you will add a table output to the baby names explorer app you created earlier. Don&rsquo;t forget that code inside a render___ function needs to be wrapped inside curly braces (e.g. renderPlot({&hellip;})).</li>
+</ul>
+<pre><code class="language-r">ui &lt;- fluidPage(
+  titlePanel(&quot;What's in a Name?&quot;),
+  # Add select input named &quot;sex&quot; to choose between &quot;M&quot; and &quot;F&quot;
+  selectInput('sex', 'Select Sex', choices = c(&quot;F&quot;, &quot;M&quot;)),
+  # Add slider input named &quot;year&quot; to select year between 1900 and 2010
+  sliderInput('year', 'Select Year', min = 1900, max = 2010, value = 1900),
+  # CODE BELOW: Add table output named &quot;table_top_10_names&quot;
+  tableOutput (&quot;table_top_10_names&quot;)
+)
+server &lt;- function(input, output, session){
+  # Function to create a data frame of top 10 names by sex and year 
+  top_10_names &lt;- function(){
+    top_10_names &lt;- babynames %&gt;% 
+      filter(sex == input$sex) %&gt;% 
+      filter(year == input$year) %&gt;% 
+      top_n(10, prop)
+  }
+  # CODE BELOW: Render a table output named &quot;table_top_10_names&quot;
+  output$table_top_10_names &lt;- renderTable ({
+    top_10_names()
+  })
+  
+}
+shinyApp(ui = ui, server = server)
+</code></pre>
+<h3 id="add-an-interactive-table-output">Add an interactive table output</h3>
+<hr>
+<p>There are multiple <em>htmlwidgets packages</em> like DT, leaflet, plotly, etc. that provide highly interactive outputs and can be easily integrated into Shiny apps using almost the same pattern. For example, you can turn a static table in a Shiny app into an interactive table using the <em>DT package</em>:</p>
+<ul>
+<li>Create an interactive table using DT::datatable().</li>
+<li>Render it using DT::renderDT().</li>
+<li>Display it using DT::DTOutput().</li>
+<li>In this example, you will update the app created previously, replacing the static table with an interactive table.</li>
+</ul>
+<pre><code class="language-r">ui &lt;- fluidPage(
+  titlePanel(&quot;What's in a Name?&quot;),
+  # Add select input named &quot;sex&quot; to choose between &quot;M&quot; and &quot;F&quot;
+  selectInput('sex', 'Select Sex', choices = c(&quot;M&quot;, &quot;F&quot;)),
+  # Add slider input named &quot;year&quot; to select year between 1900 and 2010
+  sliderInput('year', 'Select Year', min = 1900, max = 2010, value = 1900),
+  # MODIFY CODE BELOW: Add a DT output named &quot;table_top_10_names&quot;
+  DT::DTOutput('table_top_10_names')
+)
+server &lt;- function(input, output, session){
+  top_10_names &lt;- function(){
+    babynames %&gt;% 
+      filter(sex == input$sex) %&gt;% 
+      filter(year == input$year) %&gt;% 
+      top_n(10, prop)
+  }
+  # MODIFY CODE BELOW: Render a DT output named &quot;table_top_10_names&quot;
+  output$table_top_10_names &lt;- DT::renderDT({
+    top_10_names() %&gt;%
+    DT::datatable()
+  })
+}
+shinyApp(ui = ui, server = server)
+</code></pre>
+<h3 id="add-interactive-plot-output">Add interactive plot output</h3>
+<hr>
+<p>Similar to creating interactive tables, you can easily turn a static plot created using ggplot2 into an interactive plot using the <em>plotly package</em>. To render an interactive plot, use plotly::renderPlotly(), and display it using plotly::plotlyOutput().</p>
+<p>Remember that just like with other render functions, the code inside plotly::renderPlotly() should be wrapped in curly braces {}!</p>
+<p>Check out the next illustrations</p>
+<pre><code class="language-r">ui &lt;- fluidPage(
+  selectInput('name', 'Select Name', top_trendy_names$name),
+  # CODE BELOW: Add a plotly output named 'plot_trendy_names'
+  plotly::plotlyOutput(&quot;plot_trendy_names&quot;)
+)
+server &lt;- function(input, output, session){
+  # Function to plot trends in a name
+  plot_trends &lt;- function(){
+     babynames %&gt;% 
+      filter(name == input$name) %&gt;% 
+      ggplot(aes(x = year, y = n)) +
+      geom_col()
+  }
+  # CODE BELOW: Render a plotly output named 'plot_trendy_names'
+output$plot_trendy_names &lt;- plotly::renderPlotly({
+  plot_trends()
+})
+  
+  
+}
+shinyApp(ui = ui, server = server)
+</code></pre>
+<h3 id="benefits-of-an-interactive-plot">Benefits of an interactive plot</h3>
+<p>Try interacting with the plot. You can zoom in on certain areas, zoom back out, and hover over the bars to see the values. This makes plots in your app far more interesting, and allows users to gain insights without having to see any code or data.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/dashboards/">Dashboards</a>
+  
+  <a class="badge badge-light" href="/tag/shiny-apps/">Shiny Apps</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://victormandela.netlify.app/post/buiding-shinyapps3-outputs/&amp;text=Buiding%20shinyApps3:%20Outputs" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://victormandela.netlify.app/post/buiding-shinyapps3-outputs/&amp;t=Buiding%20shinyApps3:%20Outputs" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Buiding%20shinyApps3:%20Outputs&amp;body=https://victormandela.netlify.app/post/buiding-shinyapps3-outputs/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://victormandela.netlify.app/post/buiding-shinyapps3-outputs/&amp;title=Buiding%20shinyApps3:%20Outputs" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Buiding%20shinyApps3:%20Outputs%20https://victormandela.netlify.app/post/buiding-shinyapps3-outputs/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://victormandela.netlify.app/post/buiding-shinyapps3-outputs/&amp;title=Buiding%20shinyApps3:%20Outputs" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://victormandela.netlify.app/"><img class="avatar mr-3 avatar-circle" src="/author/victor-mandela/avatar_hu2523ead89b8cecf77dcf09dab2bc88a4_27302_270x270_fill_q75_lanczos_center.jpg" alt="Victor Mandela"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://victormandela.netlify.app/">Victor Mandela</a></h5>
+      <h6 class="card-subtitle">Data Scientist</h6>
+      <p class="card-text">My major interests include data modelling, machine learning, design and, deployment of shiny apps.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/VictorMandela8" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.youtube.com/channel/UCEAeELl2BiOrJdYsMcHWb8g" target="_blank" rel="noopener">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/vmandela99" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/vmandela99" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/building-shinyapp2-inputs-outputs-and-layouts/">Building shinyApp2: Inputs options </a></li>
+      
+      <li><a href="/post/how-to-build-a-shinyapp/">How to build a ShinyApp</a></li>
+      
+      <li><a href="/project/inferential-statistics-dashboard/">Inferential Statistics Dashboard</a></li>
+      
+      <li><a href="/post/building-shinapp4-layouts-and-themes/">building shinApp4: Layouts and themes</a></li>
+      
+      <li><a href="/post/how-to-scale-shiny-dashboards/">How to Scale Shiny Dashboards</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &amp;copy2021
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">love</a>  —
+    the great, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    lovely source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'event' : "Events",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/js/wowchemy.min.572b7caf7fe601716a0f74d67d754c21.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

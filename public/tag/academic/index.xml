@@ -5,12 +5,20 @@
     <link>https://victormandela.netlify.app/tag/academic/</link>
       <atom:link href="https://victormandela.netlify.app/tag/academic/index.xml" rel="self" type="application/rss+xml" />
     <description>Academic</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>&amp;copy2021</copyright><lastBuildDate>Sun, 17 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>&amp;copy2021</copyright><lastBuildDate>Tue, 16 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://victormandela.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Academic</title>
       <link>https://victormandela.netlify.app/tag/academic/</link>
     </image>
+    
+    <item>
+      <title>building shinApp4: Layouts and themes</title>
+      <link>https://victormandela.netlify.app/post/building-shinapp4-layouts-and-themes/</link>
+      <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://victormandela.netlify.app/post/building-shinapp4-layouts-and-themes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>How to Scale Shiny Dashboards</title>
