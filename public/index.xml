@@ -447,7 +447,7 @@ shinyApp(ui = ui, server = server)
 &lt;li&gt;add &lt;code&gt;runtime: shiny&lt;/code&gt; (and &lt;code&gt;output: html_document&lt;/code&gt; if it is not already included) in the YAML metadata&lt;/li&gt;
 &lt;li&gt;insert the following HTML code in the body of the post:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;iframe height=&amp;quot;800&amp;quot; width=&amp;quot;100%&amp;quot; frameborder=&amp;quot;no&amp;quot; src=&amp;quot;https://josabusmart.shinyapps.io/InferentialStatistics/&amp;quot;&amp;gt; &amp;lt;/iframe&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;iframe height=&amp;quot;800&amp;quot; width=&amp;quot;100%&amp;quot; frameborder=&amp;quot;no&amp;quot; src=&amp;quot;https://yourname.shinyapps.io/InferentialStatistics/&amp;quot;&amp;gt; &amp;lt;/iframe&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You should change the URL with the URL of your deployed Shiny app (after &lt;code&gt;src=&lt;/code&gt;, do not forget that the URL should start with &lt;code&gt;http://&lt;/code&gt; or &lt;code&gt;https://&lt;/code&gt; and should be surrounded by &lt;code&gt;&#34;&lt;/code&gt;). Moreover, you can modify the height, the width and include or not a frame border with the corresponding tags.&lt;/p&gt;
 &lt;p&gt;Here is an example of the result with one of my Shiny app (&lt;a href=&#34;https://josabusmart.shinyapps.io/InferentialStatistics/&#34;&gt;link&lt;/a&gt; to the app):&lt;/p&gt;
 &lt;iframe height=&#34;800&#34; width=&#34;100%&#34; frameborder=&#34;no&#34; src=&#34;https://josabusmart.shinyapps.io/InferentialStatistics/&#34;&gt;
