@@ -1,179 +1,104 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://victormandela.netlify.app/talk/example-talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/event/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/tag/academic/</loc>
     <lastmod>2021-02-16T17:42:40+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/post/buiding-shinyapps3-outputs/</loc>
     <lastmod>2021-02-16T16:45:31+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/post/building-shinapp4-layouts-and-themes/</loc>
     <lastmod>2021-02-16T17:42:40+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/post/building-shinyapp2-inputs-outputs-and-layouts/</loc>
     <lastmod>2021-02-16T15:51:28+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/categories/</loc>
     <lastmod>2021-02-16T17:42:40+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/tag/dashboards/</loc>
     <lastmod>2021-02-16T16:45:31+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/post/how-to-build-a-shinyapp/</loc>
     <lastmod>2021-02-16T14:59:44+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/post/</loc>
     <lastmod>2021-02-16T17:42:40+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/category/r/</loc>
     <lastmod>2021-02-16T17:42:40+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/tag/shiny-apps/</loc>
     <lastmod>2021-02-16T17:42:40+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/tags/</loc>
     <lastmod>2021-02-16T17:42:40+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/tag/deep-learning/</loc>
     <lastmod>2021-01-17T14:14:46+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/post/how-to-scale-shiny-dashboards/</loc>
     <lastmod>2021-01-17T14:39:45+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/project/inferential-statistics-dashboard/</loc>
     <lastmod>2021-01-17T23:21:44+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/project/</loc>
     <lastmod>2021-01-17T23:21:44+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://victormandela.netlify.app/tag/r-shiny-apps/</loc>
+    <lastmod>2021-01-17T23:21:44+03:00</lastmod>
+  </url><url>
     <loc>https://victormandela.netlify.app/post/sentiment-analysis/</loc>
     <lastmod>2021-01-17T14:14:46+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc></loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://victormandela.netlify.app/tag/statistics/</loc>
+    <lastmod>2021-01-17T23:21:44+03:00</lastmod>
+  </url><url>
     <loc>https://victormandela.netlify.app/publication-type/3/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/publication/preprint/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/publication_types/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/publication/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/tag/source-themes/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc></loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/publication-type/2/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/publication/journal-article/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc></loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/publication-type/1/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/publication/conference-paper/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://victormandela.netlify.app/publication/example/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
   </url>
-  
-  <url>
-    <loc></loc>
-  </url>
-  
 </urlset>

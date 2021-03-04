@@ -7,7 +7,7 @@ widget: experience
 headless: true
 
 # Order that this section appears on the page.
-weight: 40
+weight: 130
 
 title: Experience
 subtitle:
@@ -23,11 +23,27 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Data Scientist
+    company: CSV Research solutions Company
+    company_url: 'www.csvresearch.com/'
+    location: Nairobi
+    date_start: '2021-01-01'
+    date_end: ''
+    description: |2-
+        Responsibilities include:
+        
+        * Development of surveys
+        * Designing dashboards and r shiny applications
+        * Data analysis
+        * Leading data management training
+        * Training web development
+        * Incorporating machine learning and GIS into monitoring and evaluation designs
+        
+  - title: Data Scientist
     company: Xetova Software Company
-    company_url: ''
+    company_url: 'www.xetova.com/'
     location: Nairobi
     date_start: '2020-10-01'
-    date_end: ''
+    date_end: '2021-01-20'
     description: |2-
         Responsibilities include:
         
@@ -37,18 +53,20 @@ experience:
         
   - title: Master of Statistics, fellow
     company: KEMRI - Wellcome Trust
-    company_url: ''
+    company_url: 'www.kemri-wellcome.org/'
     location: Nairobi
     date_start: '2020-04-01'
     date_end: '2021-09-01'
     description: ""
-  - title: Graduate Research Assistant
+    
+  - title: Research Assistant
     company: Population Council
-    company_url: ''
+    company_url: 'www.populationcouncil.org/'
     location: Nairobi
     date_start: '2019-10-01'
     date_end: '2020-02-01'
     description: ""
+    
   - title: Business Analyst
     company: Open Capital Advisors
     company_url: ''
@@ -56,6 +74,7 @@ experience:
     date_start: '2016-11-01'
     date_end: '2018-12-01'
     description: ""
+    
   - title: Intern, Risk Analyst
     company: Equity Bank Limited
     company_url: ''

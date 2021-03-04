@@ -29,14 +29,17 @@ content:
   - name: All
     tag: '*'
   - name: Machine Learning
-    tag: MAchine Learning
-  - name: Rstats
-    tag: Rstats
+    tag: Machine Learning
+  - name: Python
+    tag: Python
   - name: GIS
     tag: GIS
+  - name: Statistics
+    tag: Statistics
+  - name: R Shiny Apps
+    tag: R Shiny Apps
   - name: Other
     tag: Analysis
-  
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
   columns: '2'
