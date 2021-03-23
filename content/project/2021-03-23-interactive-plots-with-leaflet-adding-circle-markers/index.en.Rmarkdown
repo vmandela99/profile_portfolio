@@ -1,0 +1,40 @@
+---
+title: 'Interactive plots with leaflet: adding circle markers'
+author: ''
+date: '2021-03-23'
+slug: interactive-plots-with-leaflet-adding-circle-markers
+categories: []
+tags:
+  - GIS
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-23T14:11:28+03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+## Adding Circle markers using leaflet in R
+
+```{r echo=TRUE}
+## addCircleMarkers() function
+## We will use the quakes data for demo and maping
+
+# Load the required packages
+library(leaflet)
+
+# Sample the quakes data with 10 data points to avoid cluttering
+quakes1 = quakes[sample(nrow(quakes), 10), ]
+
+# Create the map object & add circle marker
+leaflet(data=quakes1) %>% # initialize the map object
+  addProviderTiles("Esri.WorldImagery") %>%  # add 3rd party map base tile
+  # addMarkers(lng = ~ long, lat=~ lat) %>% 
+  addCircleMarkers(lng = ~ long, 
+                   lat= ~ lat) # add Circle Markers
+```
+

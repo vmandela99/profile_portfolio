@@ -1,0 +1,40 @@
+---
+title: 'Interactive plots with leaflet: Groups of layers'
+author: ''
+date: '2021-03-23'
+slug: interactive-plots-with-leaflet-groups-of-layers
+categories: []
+tags:
+  - GIS
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-23T14:18:08+03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+## Adding grouped layer ontop leaflet mpas using R
+
+```{r echo=TRUE}
+library(leaflet)
+leaflet(data=quakes) %>% 
+  addTiles(group="OSM") %>% # added a base tile 
+  addProviderTiles("Stamen.Toner", group="Toner") %>%  # added 3rd party provider tiles
+  addProviderTiles("Stamen.TonerLite", group="Toner Lite") %>%  # added 3rd party provider tiles
+  addMarkers(lng=~long, lat=~lat, group ="Markers") %>% # add markers
+  addCircleMarkers(lng=~long, lat=~lat, group ="Circle Markers") %>%  # add circle markers
+  # Now adding the control for layers
+  # Define what constitues the base group and overlay groups
+  addLayersControl(
+    baseGroups = c("OSM", "Toner", "Toner Lite"),
+    overlayGroups = c("Markers",  "Circle Markers"),
+    options = layersControlOptions(collapsed = FALSE) # control options remains on the map
+  ) %>% 
+  hideGroup("Markers") # if you want the Markers group to be unchecked initially. Basically, hides the group
+```
+
