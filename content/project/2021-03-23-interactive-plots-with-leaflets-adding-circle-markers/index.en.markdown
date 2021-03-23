@@ -1,29 +1,27 @@
 ---
-title: 'Interative plots with leaflets: Adding marker for clusters'
+title: 'Interactive plots with leaflets: Adding circle markers'
 author: ''
 date: '2021-03-23'
-slug: interative-plots-with-leaflets-adding-marker-for-clusters
+slug: interactive-plots-with-leaflets-adding-circle-markers
 categories: []
 tags:
   - GIS
 subtitle: ''
 summary: ''
 authors: []
-lastmod: '2021-03-23T12:39:23+03:00'
+lastmod: '2021-03-23T13:49:58+03:00'
 featured: no
 image:
   caption: ''
   focal_point: ''
   preview_only: no
 projects: []
-output:
-  blogdown::html_page:
-    toc: false
 ---
 
 ## Adding markers for clusters
 
-```{r echo=TRUE}
+
+```r
 # Load the required packages
 library(leaflet)
 
@@ -55,6 +53,4 @@ object2 <- leaflet(data=quakes) %>%
             title = "Earthquake Type",
             opacity = 0.6
   )
-
 ```
-
