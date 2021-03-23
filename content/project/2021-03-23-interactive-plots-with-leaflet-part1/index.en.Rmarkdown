@@ -16,6 +16,10 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+runtime: shiny
+output:
+  blogdown::html_page:
+    toc: false
 ---
 
 ## Circle markers palletes
