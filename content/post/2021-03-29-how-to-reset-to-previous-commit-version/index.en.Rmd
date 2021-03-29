@@ -1,0 +1,35 @@
+---
+title: How to reset to previous commit version
+author: ''
+date: '2021-03-29'
+slug: how-to-reset-to-previous-commit-version
+categories: []
+tags:
+  - GIS
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-29T20:54:43+03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+## Downloading git for desktop
+
+The first you do is to install the git for desktop if are not yet conversant with a version control client. You can download the git for desktop [here](https://git-scm.com/downloads).
+
+Then you can create a github account if you dont already have one, [here](https://github.com/). 
+
+## Resetting to previous versions
+
+The other process of linking git for desktop with your tool of analysis depends with the IDE you are using, either if you are using jupiter notebook, rstudio or any other.
+
+For you to reset back to previous versions you can cop the link below while replacing the commit id with the commit version you want.
+
+```
+git reset --hard <commidId> && git clean -f
+```

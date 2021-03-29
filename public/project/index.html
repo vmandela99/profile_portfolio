@@ -267,8 +267,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu22efcb094e0f25517d9b2ea60a3d74df_42984_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu22efcb094e0f25517d9b2ea60a3d74df_42984_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="https://victormandela.netlify.app/project/">
 
@@ -291,10 +291,10 @@
   <meta property="og:site_name" content="Victor Mandela">
   <meta property="og:url" content="https://victormandela.netlify.app/project/">
   <meta property="og:title" content="Projects | Victor Mandela">
-  <meta property="og:description" content="Victor Mandela Mokaya"><meta property="og:image" content="https://victormandela.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="https://victormandela.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Victor Mandela Mokaya"><meta property="og:image" content="https://victormandela.netlify.app/images/icon_hu22efcb094e0f25517d9b2ea60a3d74df_42984_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://victormandela.netlify.app/images/icon_hu22efcb094e0f25517d9b2ea60a3d74df_42984_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2021-01-17T00:00:00&#43;00:00">
+    <meta property="og:updated_time" content="2021-03-23T00:00:00&#43;00:00">
   
 
   
@@ -718,6 +718,67 @@
   
 
   
+  
+    
+    
+    
+    <div>
+      <h2><a href="/project/interactive-maps-with-leaflet-shapefile-and-leaflet/" >Interactive maps with leaflet: Shapefile and leaflet</a></h2>
+      <div class="article-style">
+        
+          Shapefiles and R leaflet We add shapes to R leaflet maps using addPolygon () functions. Drawing the boundaries on the world map will require geometry that will come from shapefiles and then we will use them for mapping.
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/project/interactive-plots-with-leaflet-groups-of-layers/" >Interactive plots with leaflet: Groups of layers</a></h2>
+      <div class="article-style">
+        
+          Adding grouped layer ontop leaflet mpas using R library(leaflet)leaflet(data=quakes) %&gt;% addTiles(group=&quot;OSM&quot;) %&gt;% # added a base tile addProviderTiles(&quot;Stamen.Toner&quot;, group=&quot;Toner&quot;) %&gt;% # added 3rd party provider tilesaddProviderTiles(&quot;Stamen.
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/project/interactive-plots-with-leaflet-legends/" >Interactive plots with Leaflet: Legends</a></h2>
+      <div class="article-style">
+        
+          Shows how to add a legend using leaflet in R # Load the required packageslibrary(leaflet)set.seed(122)# Sample the data for 50 observationsquakes1=quakes[sample(nrow(quakes),50),]# create earthquake magnitude range to define the type as follows quakes1$magrange = cut(quakes1$mag, breaks = c(4, 5, 6, 7), right=FALSE,labels = c(&quot;Light[4-5)&quot;, &quot;Moderate[5-6)&quot;, &quot;Strong[6-7)&quot;))# Define a color pallete corresponding to the magnitude rangespal = colorFactor(palette = c(&quot;yellow&quot;, &quot;red&quot;, &quot;black&quot;), domain=quakes1$magrange)# Create the map object &amp; add circle markerleaflet(data=quakes1) %&gt;% addProviderTiles(&quot;Esri.
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/project/interactive-plots-with-leaflet-part1/" >Interactive plots with Leaflet: Part1</a></h2>
+      <div class="article-style">
+        
+          Circle markers palletes For you to plot this circle markers you need to load the leaflet package.
+# Load the required packageslibrary(leaflet)set.seed(122)# Sample the data for 50 observationsquakes1=quakes[sample(nrow(quakes),50),]# create earthquake magnitude range to define the type as follows quakes1$magrange = cut(quakes1$mag, breaks = c(4, 5, 6, 7), right=FALSE,labels = c(&quot;Light[4-5)&quot;, &quot;Moderate[5-6)&quot;, &quot;Strong[6-7)&quot;))# Define a color pallete corresponding to the magnitude rangespal = colorFactor(palette = c(&quot;yellow&quot;, &quot;red&quot;, &quot;black&quot;), domain=quakes1$magrange)# Create the map object &amp; add circle markerleaflet(data=quakes1) %&gt;% addProviderTiles(&quot;Esri.
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/project/interactive-plots-with-leaflets-adding-circle-markers/" >Interactive plots with leaflets: Adding circle markers</a></h2>
+      <div class="article-style">
+        
+          Adding markers for clusters # Load the required packageslibrary(leaflet)# We will use the quakes dataset for the sake of demo# create earthquake magnitude range to define the type as follows quakes$magrange = cut(quakes$mag, breaks = c(4, 5, 6, 7), right=FALSE,labels = c(&quot;Light[4-5)&quot;, &quot;Moderate[5-6)&quot;, &quot;Strong[6-7)&quot;))# Define a color pallete corresponding to the magnitude rangespal = colorFactor(palette = c(&quot;yellow&quot;, &quot;red&quot;, &quot;black&quot;), domain=quakes$magrange)# Create the map object &amp; add circle markerobject2 &lt;- leaflet(data=quakes) %&gt;% addProviderTiles(&quot;Esri.
+        
+      </div>
+    </div>
   
     
     
