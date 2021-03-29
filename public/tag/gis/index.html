@@ -294,7 +294,7 @@
   <meta property="og:description" content="Victor Mandela Mokaya"><meta property="og:image" content="https://victormandela.netlify.app/images/icon_hu22efcb094e0f25517d9b2ea60a3d74df_42984_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://victormandela.netlify.app/images/icon_hu22efcb094e0f25517d9b2ea60a3d74df_42984_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2021-03-29T00:00:00&#43;00:00">
+    <meta property="og:updated_time" content="2021-03-23T00:00:00&#43;00:00">
   
 
   
@@ -723,18 +723,6 @@
     
     
     <div>
-      <h2><a href="/post/how-to-reset-to-previous-commit-version/" >How to reset to previous commit version</a></h2>
-      <div class="article-style">
-        
-          Downloading git for desktopThe first you do is to install the git for desktop if are not yet conversant with a version control client. You can download the git for desktop here.
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
       <h2><a href="/project/interactive-maps-with-leaflet-shapefile-and-leaflet/" >Interactive maps with leaflet: Shapefile and leaflet</a></h2>
       <div class="article-style">
         
@@ -812,18 +800,6 @@
       <div class="article-style">
         
           Adding markers for clusters# Load the required packageslibrary(leaflet)# We will use the quakes dataset for the sake of demo# create earthquake magnitude range to define the type as follows quakes$magrange = cut(quakes$mag, breaks = c(4, 5, 6, 7), right=FALSE,labels = c(&quot;Light[4-5)&quot;, &quot;Moderate[5-6)&quot;, &quot;Strong[6-7)&quot;))# Define a color pallete corresponding to the magnitude rangespal = colorFactor(palette = c(&quot;yellow&quot;, &quot;red&quot;, &quot;black&quot;), domain=quakes$magrange)# Create the map object &amp; add circle markerobject2 &lt;- leaflet(data=quakes) %&gt;% addProviderTiles(&quot;Esri.
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/project/r-plotly-animated-plots/" >R Plotly: Animated plots</a></h2>
-      <div class="article-style">
-        
-          library(gapminder) # to access gapminder dataset ## Warning: package 'gapminder' was built under R version 4.0.4 library(plotly) # for plotly charts, pipe % operator ## Loading required package: ggplot2## ## Attaching package: 'plotly'## The following object is masked from 'package:ggplot2':## ## last_plot## The following object is masked from 'package:stats':## ## filter## The following object is masked from 'package:graphics':## ## layout library(dplyr) # for any data manipulation operations; we used filter() ## ## Attaching package: 'dplyr'## The following objects are masked from 'package:stats':## ## filter, lag## The following objects are masked from 'package:base':## ## intersect, setdiff, setequal, union ## Scatter plot for a specific year 2002gapminder %&gt;% filter(year==2002) %&gt;% # filter data for the year 2002plot_ly() %&gt;% add_markers(x=~gdpPercap, y=~lifeExp) %&gt;% ## Add title to the plot, and axis.
         
       </div>
     </div>
