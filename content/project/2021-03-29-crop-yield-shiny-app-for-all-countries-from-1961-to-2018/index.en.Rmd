@@ -1,0 +1,183 @@
+---
+title: Crop Yield Shiny app for all countries from 1961 to 2018
+author: ''
+date: '2021-03-29'
+slug: crop-yield-shiny-app-for-all-countries-from-1961-to-2018
+categories: []
+tags:
+  - R Shiny Apps
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-29T23:32:49+03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+runtime: shiny
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	message = FALSE,
+	warning = FALSE,
+	include = FALSE
+)
+```
+
+In this blog we look at the crop-yields in different countries from 1961 to 2018. Crop Yields is in tonnes per hectare
+
+The crops include bananas, barley, beans, cassava, cocoa beans, maize, peas, potatoes, rice, soya beans and wheat.
+
+We first begin by loading the packages and then setting the theme.
+
+```{r eval=TRUE, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(forcats)
+library(shiny)
+library(stringr)
+library(plotly)
+
+theme_set(theme_light())
+```
+
+## Data cleaning and exploration
+
+We find out what the top 9 crops in the data sets.
+
+
+
+```
+# Data cleaning and processing
+yields_tidy <- readRDS("yields_tidy.rds")
+top_nine <- yields_tidy %>%
+  count(crop, sort = TRUE) %>%
+  head(9) 
+
+top_crops <- top_nine%>%
+  pull(crop)
+
+top_nine %>% knitr::kable()
+```
+
+We have a look at the crop yield of Kenya and Tanzania. We can see that Cassava, Beans and Potatoes are the most produced crops.
+
+```
+yields_tidy %>% 
+  filter(code %in% c("TZA", "KEN")) %>%
+    mutate(crop = fct_reorder(crop, -yield)) %>%
+    mutate(entity = fct_reorder(entity, -yield)) %>%
+    ggplot(aes(year, yield, color = entity)) +
+    geom_line() +
+    expand_limits(y = 0) +
+    facet_wrap(~ crop, scales = "fixed") +
+    labs(x = "Year",
+         y = "Yield (tonnes per hectare)",
+         title = "Crop yields over time",
+         color = "Country")
+```
+
+
+```
+plot_yields <- function(tbl, facet_scales = "fixed") {
+  g <- tbl %>%
+    mutate(crop = fct_reorder(crop, -yield)) %>%
+    mutate(entity = fct_reorder(entity, -yield)) %>%
+    ggplot(aes(year, yield, color = entity)) +
+    geom_line() +
+    expand_limits(y = 0) +
+    facet_wrap(~ crop, scales = facet_scales) +
+    labs(x = "Year",
+         y = "Yield (tonnes per hectare)",
+         title = "Crop yields over time",
+         color = "Country")
+  
+  ggplotly(g)
+}
+# yields_tidy %>%
+#   filter(code %in% c("RWA", "SEN")) %>%
+#   plot_yields()
+```
+
+
+Here is an example of the result with one of my Shiny app ([link](https://josabusmart.shinyapps.io/World_crops/) to the app):
+
+<iframe height="800" width="100%" frameborder="no" src="https://josabusmart.shinyapps.io/World_crops/"> </iframe>
+
+<br>
+
+The code to the dashboard is shown below.
+
+```
+
+ui <- fluidPage(
+  
+  titlePanel("Crop Yields of all Countries/Continents/Region from 1961 to 2018: Victor Mandela"),
+  
+  sidebarLayout(
+    sidebarPanel(
+      selectInput("entity",
+              label = "Country Name:",
+              choices = unique(yields_tidy$entity),
+              selected = c("Kenya", "Tanzania"),
+              selectize = TRUE,
+              multiple = TRUE),
+      selectInput("crop",
+              label = "Types of Crops:",
+              choices = unique(yields_tidy$crop),
+              selected = top_crops,
+              selectize = TRUE,
+              multiple = TRUE),
+      radioButtons("facet_scales",
+               label = "",
+               choices = c("Free y-axis" = "free_y",
+                           "Shared y-axis" = "fixed"))
+      ),
+      mainPanel(
+  plotlyOutput("crop_plot"),
+  dataTableOutput("tabled")
+      )
+    )
+  )
+
+
+server <- function(input, output){
+  plot_yields <- function(tbl, facet_scales = "fixed") {
+  g <- tbl %>%
+    mutate(crop = fct_reorder(crop, -yield)) %>%
+    mutate(entity = fct_reorder(entity, -yield)) %>%
+    ggplot(aes(year, yield, color = entity)) +
+    geom_line() +
+    expand_limits(y = 0) +
+    facet_wrap(~ crop, scales = facet_scales) +
+    labs(x = "Year",
+         y = "Yield (tonnes per hectare)",
+         title = "Crop yields over time",
+         color = "Country",
+         caption = "Data source: TidyTuesday")
+  
+  ggplotly(g)
+  }
+  
+output$crop_plot <- renderPlotly({
+  yields_tidy %>%
+    filter(entity %in% input$entity,
+           crop %in% input$crop) %>%
+    plot_yields(facet_scales = input$facet_scales)
+})
+
+output$tabled <- renderDataTable(yields_tidy,
+                                 options = list(
+          pageLength = 5
+        )
+      )
+
+}
+shinyApp(ui = ui, server = server)
+```
+
