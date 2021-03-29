@@ -5,12 +5,75 @@
     <link>https://victormandela.netlify.app/post/</link>
       <atom:link href="https://victormandela.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>&amp;copy2021</copyright><lastBuildDate>Tue, 16 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>&amp;copy2021</copyright><lastBuildDate>Mon, 29 Mar 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://victormandela.netlify.app/images/icon_hu22efcb094e0f25517d9b2ea60a3d74df_42984_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>https://victormandela.netlify.app/post/</link>
     </image>
+    
+    <item>
+      <title>How to download data from KDHS into Rstudio</title>
+      <link>https://victormandela.netlify.app/post/how-to-download-data-from-kdhs-into-rstudio/</link>
+      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://victormandela.netlify.app/post/how-to-download-data-from-kdhs-into-rstudio/</guid>
+      <description>
+&lt;script src=&#34;https://victormandela.netlify.app/post/how-to-download-data-from-kdhs-into-rstudio/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;kdhs-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;KDHS Data&lt;/h2&gt;
+&lt;p&gt;One of best and free data sets for conducting thesis and academic based analysis is the &lt;strong&gt;KDHS datasets&lt;/strong&gt;. The Kenya Demographic and health survey data has a rich set of household variables that can reveal alot about Kenya.&lt;/p&gt;
+&lt;p&gt;In this post we want to evaluate on how to load kdhs datasets into R and change the existing stata format into much better format for analysis.&lt;/p&gt;
+&lt;p&gt;First of all make sure you have installed and loaded the following packages.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;library(tidyverse)
+library(janitor)
+library(Hmisc)
+library(tidymodels)
+library(haven)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The tidyverse has set of tools for manipulation of the data, the janitor, as the name suggests is for cleaning the names, the Hmisc is for grabbing the labels in the data names, and haven makes it possible to import the dataset in the stata format that we downloaded it.&lt;/p&gt;
+&lt;p&gt;Then we load the data.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+#load the data
+data &amp;lt;- haven::read_dta(&amp;quot;KEHR72FL.dta&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;procedure-for-reading-the-kdhs-dataset.&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Procedure for reading the kdhs dataset.&lt;/h2&gt;
+&lt;p&gt;Once you read in the data set into your work space in R. You need to extract the actual values of the labels and then you change the labels from stata into reasonable names. You finally have to clean the names by removing inconsistent punctuation in the names.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+names &amp;lt;- Hmisc::label(data) %&amp;gt;% unlist()  #Extract the actual names from the labels
+
+colnames(data) &amp;lt;- names       #change the labels from stata into reasonable names
+
+#clean the names
+data &amp;lt;- data %&amp;gt;% janitor::clean_names()    #removing inconsistent punctuation in the names&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to reset to previous commit version</title>
+      <link>https://victormandela.netlify.app/post/how-to-reset-to-previous-commit-version/</link>
+      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://victormandela.netlify.app/post/how-to-reset-to-previous-commit-version/</guid>
+      <description>
+&lt;script src=&#34;https://victormandela.netlify.app/post/how-to-reset-to-previous-commit-version/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;downloading-git-for-desktop&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Downloading git for desktop&lt;/h2&gt;
+&lt;p&gt;The first you do is to install the git for desktop if are not yet conversant with a version control client. You can download the git for desktop &lt;a href=&#34;https://git-scm.com/downloads&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then you can create a github account if you dont already have one, &lt;a href=&#34;https://github.com/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;resetting-to-previous-versions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Resetting to previous versions&lt;/h2&gt;
+&lt;p&gt;The other process of linking git for desktop with your tool of analysis depends with the IDE you are using, either if you are using jupiter notebook, rstudio or any other.&lt;/p&gt;
+&lt;p&gt;For you to reset back to previous versions you can cop the link below while replacing the commit id with the commit version you want.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git reset --hard &amp;lt;commidId&amp;gt; &amp;amp;&amp;amp; git clean -f&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Buiding shinyApps3: Outputs</title>
