@@ -1,0 +1,62 @@
+---
+title: How to download data from KDHS into Rstudio
+author: ''
+date: '2021-03-29'
+slug: how-to-download-data-from-kdhs-into-rstudio
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-29T23:39:14+03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+## KDHS Data
+
+One of best and free data sets for conducting thesis and academic based analysis is the **KDHS datasets**. The Kenya Demographic and health survey data has a rich set of household variables that can reveal alot about Kenya.
+
+In this post we want to evaluate on how to load kdhs datasets into R and change the existing stata format into much better format for analysis.
+
+
+First of all make sure you have installed and loaded the following packages.
+
+```
+library(tidyverse)
+library(janitor)
+library(Hmisc)
+library(tidymodels)
+library(haven)
+```
+
+
+The tidyverse has set of tools for manipulation of the data, the janitor, as the name suggests is for cleaning the names, the Hmisc is for grabbing the labels in the data names, and haven makes it possible to import the dataset in the stata format that we downloaded it.
+
+Then we load the data.
+
+```
+
+#load the data
+data <- haven::read_dta("KEHR72FL.dta")
+
+```
+
+## Procedure for reading the kdhs dataset.
+
+Once you read in the data set into your work space in R. You need to extract the actual values of the labels and then you change the labels from stata into reasonable names. You finally have to clean the names by removing inconsistent punctuation in the names.
+
+```
+
+names <- Hmisc::label(data) %>% unlist()  #Extract the actual names from the labels
+
+colnames(data) <- names       #change the labels from stata into reasonable names
+
+#clean the names
+data <- data %>% janitor::clean_names()    #removing inconsistent punctuation in the names
+```
+

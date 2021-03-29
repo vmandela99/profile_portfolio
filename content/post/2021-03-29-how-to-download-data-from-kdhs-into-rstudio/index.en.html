@@ -1,0 +1,50 @@
+---
+title: How to download data from KDHS into Rstudio
+author: ''
+date: '2021-03-29'
+slug: how-to-download-data-from-kdhs-into-rstudio
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-29T23:39:14+03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="kdhs-data" class="section level2">
+<h2>KDHS Data</h2>
+<p>One of best and free data sets for conducting thesis and academic based analysis is the <strong>KDHS datasets</strong>. The Kenya Demographic and health survey data has a rich set of household variables that can reveal alot about Kenya.</p>
+<p>In this post we want to evaluate on how to load kdhs datasets into R and change the existing stata format into much better format for analysis.</p>
+<p>First of all make sure you have installed and loaded the following packages.</p>
+<pre><code>library(tidyverse)
+library(janitor)
+library(Hmisc)
+library(tidymodels)
+library(haven)</code></pre>
+<p>The tidyverse has set of tools for manipulation of the data, the janitor, as the name suggests is for cleaning the names, the Hmisc is for grabbing the labels in the data names, and haven makes it possible to import the dataset in the stata format that we downloaded it.</p>
+<p>Then we load the data.</p>
+<pre><code>
+#load the data
+data &lt;- haven::read_dta(&quot;KEHR72FL.dta&quot;)
+</code></pre>
+</div>
+<div id="procedure-for-reading-the-kdhs-dataset." class="section level2">
+<h2>Procedure for reading the kdhs dataset.</h2>
+<p>Once you read in the data set into your work space in R. You need to extract the actual values of the labels and then you change the labels from stata into reasonable names. You finally have to clean the names by removing inconsistent punctuation in the names.</p>
+<pre><code>
+names &lt;- Hmisc::label(data) %&gt;% unlist()  #Extract the actual names from the labels
+
+colnames(data) &lt;- names       #change the labels from stata into reasonable names
+
+#clean the names
+data &lt;- data %&gt;% janitor::clean_names()    #removing inconsistent punctuation in the names</code></pre>
+</div>
