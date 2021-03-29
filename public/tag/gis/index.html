@@ -816,6 +816,18 @@
       </div>
     </div>
   
+    
+    
+    
+    <div>
+      <h2><a href="/project/r-plotly-animated-plots/" >R Plotly: Animated plots</a></h2>
+      <div class="article-style">
+        
+          library(gapminder) # to access gapminder dataset ## Warning: package 'gapminder' was built under R version 4.0.4 library(plotly) # for plotly charts, pipe % operator ## Loading required package: ggplot2## ## Attaching package: 'plotly'## The following object is masked from 'package:ggplot2':## ## last_plot## The following object is masked from 'package:stats':## ## filter## The following object is masked from 'package:graphics':## ## layout library(dplyr) # for any data manipulation operations; we used filter() ## ## Attaching package: 'dplyr'## The following objects are masked from 'package:stats':## ## filter, lag## The following objects are masked from 'package:base':## ## intersect, setdiff, setequal, union ## Scatter plot for a specific year 2002gapminder %&gt;% filter(year==2002) %&gt;% # filter data for the year 2002plot_ly() %&gt;% add_markers(x=~gdpPercap, y=~lifeExp) %&gt;% ## Add title to the plot, and axis.
+        
+      </div>
+    </div>
+  
 
   
 

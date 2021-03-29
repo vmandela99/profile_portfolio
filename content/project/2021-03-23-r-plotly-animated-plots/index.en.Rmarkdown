@@ -1,0 +1,59 @@
+---
+title: 'R Plotly: Animated plots'
+author: ''
+date: '2021-03-23'
+slug: r-plotly-animated-plots
+categories: []
+tags: GIS
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-23T14:39:15+03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+```{r echo=TRUE}
+library(gapminder) # to access gapminder dataset
+library(plotly) # for plotly charts, pipe % operator
+library(dplyr) # for any data manipulation operations; we used filter()
+
+
+## Scatter plot for a specific year 2002
+gapminder %>% 
+  filter(year==2002) %>%  # filter data for the year 2002
+  plot_ly() %>% 
+  add_markers(x=~gdpPercap, y=~lifeExp) %>% 
+  ## Add title to the plot, and axis. Apply log transformation to the x axis
+  layout(title="Plotly Scatter Plot",
+         xaxis=list(title="GDP Per Capita (log scale)", type="log"),
+         yaxis=list(title= "Life Expectancy")) %>% 
+  hide_legend()
+
+```
+
+```{r echo=TRUE}
+
+## Creating animation using the frame argument
+## Frame is transitioned over the years to bring a smooth animation effect
+gapminder %>% 
+  plot_ly() %>%  
+  # add frame argument for animation and map to the variable needed on the timeline
+  add_markers(x=~gdpPercap, y=~lifeExp, 
+              frame=~year, 
+              text=~paste("Life Expectancy: ", round(lifeExp,1), 
+                          "<br>", 
+                          "GDP Per Capita:", round(gdpPercap,1), 
+                          "<br>", 
+                          "Country:", country), 
+              hoverinfo= "text") %>% 
+  layout(title="Animated Plotly Scatter Plot",
+         xaxis=list(title="GDP Per Capita (log scale)", type="log"),
+         yaxis=list(title= "Life Expectancy")) %>% 
+  hide_legend()
+```
+

@@ -1,0 +1,12 @@
+name: World_crops
+title: World_crops
+username:
+account: josabusmart
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3875069
+bundleId: 4404563
+url: https://josabusmart.shinyapps.io/World_crops/
+when: 1616948516.55141
+asMultiple: FALSE
+asStatic: FALSE
