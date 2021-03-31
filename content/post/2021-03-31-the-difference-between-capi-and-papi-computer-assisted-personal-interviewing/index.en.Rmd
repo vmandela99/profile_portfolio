@@ -17,9 +17,9 @@ image:
 projects: []
 ---
 
-![What is CAPI in survey?](why.png)
-
 ## An overview of Computer-Assisted Personal Interviewing
+
+![What is CAPI in survey?](why.png)
 
 Surveys are very important in collection of data. In this post we talk about the difference of CAPI and PAPI. The believe is that CAPI is going to be the future of data collection all around the world.
 
@@ -41,6 +41,7 @@ We look now at the implementation between paper and pencil interviewing as oppos
 So this step is really a lot faster in CAPI because after we've designed the data entry template, it's a very quick process to download this questionnaire onto the tablets and of course, no trees have to die in the making of a CAPI survey. Then fieldwork carries on much the same -- it's the same sort of process. The interviewers are doing the same job. The main difference is they're recording their answers directly into the tablet or smartphone as opposed to writing it down on the paper. On the paper side, we next have supervisors editing. This is where the supervisor would go back and check through the answers which the interviewer has given, make sure the skip patterns were followed correctly, no outrageous values and things like this. There's also a little bit of this in CAPI, we do need to do some QC work but a lot of this is taken away because the skip patterns are programmed automatically, so the interviewer can't follow a wrong skip pattern -- one of the big things supervisors used to check for, and also the data validation possible. So we have set ranges which the interviewers can enter for numeric values and things like this so there's much less mistakes. 
 
 ![Difference between PAPI and CAPI: source African Development Bank](Survey1.png)
+
 ## Benefits of CAPI
 
 
