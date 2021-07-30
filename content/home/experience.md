@@ -22,7 +22,6 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-experience:
   - title: Research Analyst
     company: Gro Intelligence
     company_url: 'www.gro-intelligence.com/'
