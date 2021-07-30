@@ -22,6 +22,33 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+experience:
+  - title: Research Analyst
+    company: Gro Intelligence
+    company_url: 'www.gro-intelligence.com/'
+    location: Nairobi
+    date_start: '2021-08-01'
+    date_end: ''
+    description: |2-
+        Responsibilities include:
+        
+        * Designing dashboards and r shiny applications
+        * Data management
+        
+  - title: Senior R Programmer
+    company: Blue Marble MicroInsurance
+    company_url: 'www.bluemarblemicro.com/'
+    location: Nairobi
+    date_start: '2021-07-01'
+    date_end: ''
+    description: |2-
+        Responsibilities include:
+        
+        * Optimizing R code
+        * Designing dashboards and r shiny applications
+        * Creating packages and modelling designs
+        * evaluation designs
+        
   - title: Data Scientist
     company: CSV Research solutions Company
     company_url: 'www.csvresearch.com/'
