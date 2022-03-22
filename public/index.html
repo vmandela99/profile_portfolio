@@ -239,7 +239,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.e838cc15e24149ef153e166fe2e27f08.css">
+  <link rel="stylesheet" href="/css/wowchemy.3ed8ae6adb2995d2aa01a7cd8de32f2a.css">
 
   
 
@@ -342,7 +342,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.764d4838fbd6a3ba036be5faa1584a93.js"></script>
+  <script src="/js/wowchemy-init.min.1df0392aab543464b23a85146803aaf2.js"></script>
 
   
 
@@ -1112,7 +1112,7 @@ The crops include bananas, barley, beans, cassava, cocoa beans, maize, peas, pot
     
     <a href="/project/interactive-plots-with-leaflet-adding-circle-markers/"  class="summary-link">
       <div class="article-style">
-        Adding Circle markers using leaflet in R ## addCircleMarkers() function## We will use the quakes data for demo and maping# Load the required packageslibrary(leaflet)# Sample the quakes data with 10 data points to avoid clutteringquakes1 = quakes[sample(nrow(quakes), 10), ]# Create the map object &amp; add circle markerleaflet(data=quakes1) %&gt;% # initialize the map objectaddProviderTiles(&quot;Esri.
+        Adding Circle markers using leaflet in R ## addCircleMarkers() function ## We will use the quakes data for demo and maping # Load the required packages library(leaflet) # Sample the quakes data with 10 data points to avoid cluttering quakes1 = quakes[sample(nrow(quakes), 10), ] # Create the map object &amp; add circle marker leaflet(data=quakes1) %&gt;% # initialize the map object addProviderTiles(&quot;Esri.
       </div>
     </a>
     
@@ -1216,7 +1216,7 @@ The crops include bananas, barley, beans, cassava, cocoa beans, maize, peas, pot
     
     <a href="/project/interactive-plots-with-leaflet-groups-of-layers/"  class="summary-link">
       <div class="article-style">
-        Adding grouped layer ontop leaflet mpas using R library(leaflet)leaflet(data=quakes) %&gt;% addTiles(group=&quot;OSM&quot;) %&gt;% # added a base tile addProviderTiles(&quot;Stamen.Toner&quot;, group=&quot;Toner&quot;) %&gt;% # added 3rd party provider tilesaddProviderTiles(&quot;Stamen.
+        Adding grouped layer ontop leaflet mpas using R library(leaflet) leaflet(data=quakes) %&gt;% addTiles(group=&quot;OSM&quot;) %&gt;% # added a base tile addProviderTiles(&quot;Stamen.Toner&quot;, group=&quot;Toner&quot;) %&gt;% # added 3rd party provider tiles addProviderTiles(&quot;Stamen.
       </div>
     </a>
     
@@ -1320,7 +1320,7 @@ The crops include bananas, barley, beans, cassava, cocoa beans, maize, peas, pot
     
     <a href="/project/interactive-plots-with-leaflet-legends/"  class="summary-link">
       <div class="article-style">
-        Shows how to add a legend using leaflet in R # Load the required packageslibrary(leaflet)set.seed(122)# Sample the data for 50 observationsquakes1=quakes[sample(nrow(quakes),50),]# create earthquake magnitude range to define the type as follows quakes1$magrange = cut(quakes1$mag, breaks = c(4, 5, 6, 7), right=FALSE,labels = c(&quot;Light[4-5)&quot;, &quot;Moderate[5-6)&quot;, &quot;Strong[6-7)&quot;))# Define a color pallete corresponding to the magnitude rangespal = colorFactor(palette = c(&quot;yellow&quot;, &quot;red&quot;, &quot;black&quot;), domain=quakes1$magrange)# Create the map object &amp; add circle markerleaflet(data=quakes1) %&gt;% addProviderTiles(&quot;Esri.
+        Shows how to add a legend using leaflet in R # Load the required packages library(leaflet) set.seed(122) # Sample the data for 50 observations quakes1=quakes[sample(nrow(quakes),50),] # create earthquake magnitude range to define the type as follows quakes1$magrange = cut(quakes1$mag, breaks = c(4, 5, 6, 7), right=FALSE, labels = c(&quot;Light[4-5)&quot;, &quot;Moderate[5-6)&quot;, &quot;Strong[6-7)&quot;)) # Define a color pallete corresponding to the magnitude ranges pal = colorFactor(palette = c(&quot;yellow&quot;, &quot;red&quot;, &quot;black&quot;), domain=quakes1$magrange) # Create the map object &amp; add circle marker leaflet(data=quakes1) %&gt;% addProviderTiles(&quot;Esri.
       </div>
     </a>
     
@@ -1425,7 +1425,7 @@ The crops include bananas, barley, beans, cassava, cocoa beans, maize, peas, pot
     <a href="/project/interactive-plots-with-leaflet-part1/"  class="summary-link">
       <div class="article-style">
         Circle markers palletes For you to plot this circle markers you need to load the leaflet package.
-# Load the required packageslibrary(leaflet)set.seed(122)# Sample the data for 50 observationsquakes1=quakes[sample(nrow(quakes),50),]# create earthquake magnitude range to define the type as follows quakes1$magrange = cut(quakes1$mag, breaks = c(4, 5, 6, 7), right=FALSE,labels = c(&quot;Light[4-5)&quot;, &quot;Moderate[5-6)&quot;, &quot;Strong[6-7)&quot;))# Define a color pallete corresponding to the magnitude rangespal = colorFactor(palette = c(&quot;yellow&quot;, &quot;red&quot;, &quot;black&quot;), domain=quakes1$magrange)# Create the map object &amp; add circle markerleaflet(data=quakes1) %&gt;% addProviderTiles(&quot;Esri.
+# Load the required packages library(leaflet) set.seed(122) # Sample the data for 50 observations quakes1=quakes[sample(nrow(quakes),50),] # create earthquake magnitude range to define the type as follows quakes1$magrange = cut(quakes1$mag, breaks = c(4, 5, 6, 7), right=FALSE, labels = c(&quot;Light[4-5)&quot;, &quot;Moderate[5-6)&quot;, &quot;Strong[6-7)&quot;)) # Define a color pallete corresponding to the magnitude ranges pal = colorFactor(palette = c(&quot;yellow&quot;, &quot;red&quot;, &quot;black&quot;), domain=quakes1$magrange) # Create the map object &amp; add circle marker leaflet(data=quakes1) %&gt;% addProviderTiles(&quot;Esri.
       </div>
     </a>
     
@@ -1529,7 +1529,7 @@ The crops include bananas, barley, beans, cassava, cocoa beans, maize, peas, pot
     
     <a href="/project/interactive-plots-with-leaflets-adding-circle-markers/"  class="summary-link">
       <div class="article-style">
-        Adding markers for clusters # Load the required packageslibrary(leaflet)# We will use the quakes dataset for the sake of demo# create earthquake magnitude range to define the type as follows quakes$magrange = cut(quakes$mag, breaks = c(4, 5, 6, 7), right=FALSE,labels = c(&quot;Light[4-5)&quot;, &quot;Moderate[5-6)&quot;, &quot;Strong[6-7)&quot;))# Define a color pallete corresponding to the magnitude rangespal = colorFactor(palette = c(&quot;yellow&quot;, &quot;red&quot;, &quot;black&quot;), domain=quakes$magrange)# Create the map object &amp; add circle markerobject2 &lt;- leaflet(data=quakes) %&gt;% addProviderTiles(&quot;Esri.
+        Adding markers for clusters # Load the required packages library(leaflet) # We will use the quakes dataset for the sake of demo # create earthquake magnitude range to define the type as follows quakes$magrange = cut(quakes$mag, breaks = c(4, 5, 6, 7), right=FALSE, labels = c(&quot;Light[4-5)&quot;, &quot;Moderate[5-6)&quot;, &quot;Strong[6-7)&quot;)) # Define a color pallete corresponding to the magnitude ranges pal = colorFactor(palette = c(&quot;yellow&quot;, &quot;red&quot;, &quot;black&quot;), domain=quakes$magrange) # Create the map object &amp; add circle marker object2 &lt;- leaflet(data=quakes) %&gt;% addProviderTiles(&quot;Esri.
       </div>
     </a>
     
@@ -1633,7 +1633,7 @@ The crops include bananas, barley, beans, cassava, cocoa beans, maize, peas, pot
     
     <a href="/project/interactive-plots-with-leaflets-adding-markers-for-clusters/"  class="summary-link">
       <div class="article-style">
-        Adding markers for clusters# Load the required packageslibrary(leaflet)# We will use the quakes dataset for the sake of demo# create earthquake magnitude range to define the type as follows quakes$magrange = cut(quakes$mag, breaks = c(4, 5, 6, 7), right=FALSE,labels = c(&quot;Light[4-5)&quot;, &quot;Moderate[5-6)&quot;, &quot;Strong[6-7)&quot;))# Define a color pallete corresponding to the magnitude rangespal = colorFactor(palette = c(&quot;yellow&quot;, &quot;red&quot;, &quot;black&quot;), domain=quakes$magrange)# Create the map object &amp; add circle markerobject2 &lt;- leaflet(data=quakes) %&gt;% addProviderTiles(&quot;Esri.
+        Adding markers for clusters # Load the required packages library(leaflet) # We will use the quakes dataset for the sake of demo # create earthquake magnitude range to define the type as follows quakes$magrange = cut(quakes$mag, breaks = c(4, 5, 6, 7), right=FALSE, labels = c(&quot;Light[4-5)&quot;, &quot;Moderate[5-6)&quot;, &quot;Strong[6-7)&quot;)) # Define a color pallete corresponding to the magnitude ranges pal = colorFactor(palette = c(&quot;yellow&quot;, &quot;red&quot;, &quot;black&quot;), domain=quakes$magrange) # Create the map object &amp; add circle marker object2 &lt;- leaflet(data=quakes) %&gt;% addProviderTiles(&quot;Esri.
       </div>
     </a>
     
@@ -1738,8 +1738,8 @@ The crops include bananas, barley, beans, cassava, cocoa beans, maize, peas, pot
     <a href="/project/inferential-statistics-dashboard/"  class="summary-link">
       <div class="article-style">
         Inferential Statistics
-If you have developed and deployed a Shiny app and would like to embed it in blogdown, follow these steps:
-create a new post as usualadd runtime: shiny (and output: html_document if it is not already included) in the YAML metadatainsert the following HTML code in the body of the post:&lt;iframe height=&quot;800&quot; width=&quot;100%&quot; frameborder=&quot;no&quot; src=&quot;https://yourname.
+ If you have developed and deployed a Shiny app and would like to embed it in blogdown, follow these steps:
+create a new post as usual add runtime: shiny (and output: html_document if it is not already included) in the YAML metadata insert the following HTML code in the body of the post:  &lt;iframe height=&quot;800&quot; width=&quot;100%&quot; frameborder=&quot;no&quot; src=&quot;https://yourname.
       </div>
     </a>
     
@@ -1945,13 +1945,13 @@ create a new post as usualadd runtime: shiny (and output: html_document if it i
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0">
-      <a href="/post/buiding-shinyapps3-outputs/" >Buiding shinyApps3: Outputs</a>
+      <a href="/post/capi-workflow-cspro-and-survey-solutions/" >CAPI Workflow: CSPro and Survey Solutions</a>
     </h3>
 
     
-    <a href="/post/buiding-shinyapps3-outputs/"  class="summary-link">
+    <a href="/post/capi-workflow-cspro-and-survey-solutions/"  class="summary-link">
       <div class="article-style">
-        OutPuts in ShinyApps Outputs are build in shinyApps based on inputs. We use render functiond to create a variety of outputs ranging from plots renderPlot, tables renderTable and images renderImage.
+        Workflows for CAPIs: Computer-Assisted Personal Interviewing We are going to go through most of the modules for both CSPro and Survey Solutions. I spent the last several years working on CAPI fieldwork projects across East Africa.
       </div>
     </a>
     
@@ -1977,7 +1977,7 @@ create a new post as usualadd runtime: shiny (and output: html_document if it i
           Last updated on
       
     
-    Feb 16, 2021
+    Mar 31, 2021
   </span>
   
 
@@ -1986,7 +1986,7 @@ create a new post as usualadd runtime: shiny (and output: html_document if it i
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    4 min read
   </span>
   
 
@@ -1996,14 +1996,10 @@ create a new post as usualadd runtime: shiny (and output: html_document if it i
   
   
   <span class="middot-divider"></span>
-  <a href="/post/buiding-shinyapps3-outputs/#disqus_thread"></a>
+  <a href="/post/capi-workflow-cspro-and-survey-solutions/#disqus_thread"></a>
   
 
   
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/r/">R</a></span>
   
 
 </div>
@@ -2020,105 +2016,8 @@ create a new post as usualadd runtime: shiny (and output: html_document if it i
     
     
     
-    <a href="/post/buiding-shinyapps3-outputs/" >
-      <img src="/post/buiding-shinyapps3-outputs/Featured_hua1aded21a66624360ba2a267aaa0a660_11764_1242bac38178a4714411fbaf342687f8.jpg" data-src="/post/buiding-shinyapps3-outputs/Featured_hua1aded21a66624360ba2a267aaa0a660_11764_150x0_resize_q75_lanczos.jpg" alt="Buiding shinyApps3: Outputs" class="lazyload">
-    </a>
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/building-shinapp4-layouts-and-themes/" >building shinApp4: Layouts and themes</a>
-    </h3>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Feb 16, 2021
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    0 min read
-  </span>
-  
-
-  
-  
-  
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/building-shinapp4-layouts-and-themes/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/r/">R</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    
-    
-    <a href="/post/building-shinapp4-layouts-and-themes/" >
-      <img src="/post/building-shinapp4-layouts-and-themes/Featured_hu8271e284f11eebb27bb6a7ca4e136a9d_102397_dfe01292d2844bd34626e31052168698.jpg" data-src="/post/building-shinapp4-layouts-and-themes/Featured_hu8271e284f11eebb27bb6a7ca4e136a9d_102397_150x0_resize_q75_lanczos.jpg" alt="building shinApp4: Layouts and themes" class="lazyload">
+    <a href="/post/capi-workflow-cspro-and-survey-solutions/" >
+      <img src="/post/capi-workflow-cspro-and-survey-solutions/Featured_hu1eba95434ddc4478f321e0f86a731d06_122893_5b921e035b228bd76dabde32938b9a87.png" data-src="/post/capi-workflow-cspro-and-survey-solutions/Featured_hu1eba95434ddc4478f321e0f86a731d06_122893_150x0_resize_lanczos_2.png" alt="CAPI Workflow: CSPro and Survey Solutions" class="lazyload">
     </a>
     
   </div>
@@ -2147,15 +2046,13 @@ create a new post as usualadd runtime: shiny (and output: html_document if it i
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0">
-      <a href="/post/building-shinyapp2-inputs-outputs-and-layouts/" >Building shinyApp2: Inputs options </a>
+      <a href="/post/hardware-requirements-for-capi/" >Hardware requirements for CAPI</a>
     </h3>
 
     
-    <a href="/post/building-shinyapp2-inputs-outputs-and-layouts/"  class="summary-link">
+    <a href="/post/hardware-requirements-for-capi/"  class="summary-link">
       <div class="article-style">
-        INPUTS Shiny provides a wide variety of inputs that allows users to provide text (textInput, selectInput), numbers (numericInput, sliderInput), booleans (checkBoxInput, radioInput), and dates (dateInput, dateRangeInput).
-For example:-
-To select a range a name from a predifined range of choice we use - the selectInput.
+        Hardware Requirements for CAPI Implementation Remember that the hardware requirements will be the same regardless of which software package you choose for your project. So let’s take a look at some slides for the specifics.
       </div>
     </a>
     
@@ -2181,113 +2078,7 @@ To select a range a name from a predifined range of choice we use - the selectIn
           Last updated on
       
     
-    Feb 16, 2021
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-  
-  
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/building-shinyapp2-inputs-outputs-and-layouts/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/r/">R</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    
-    
-    <a href="/post/building-shinyapp2-inputs-outputs-and-layouts/" >
-      <img src="/post/building-shinyapp2-inputs-outputs-and-layouts/Featured_hu459979cddc63524e064df15b75705ecd_46676_6d99b4b29a694dd0bb2ad0d7e2d05d20.jpg" data-src="/post/building-shinyapp2-inputs-outputs-and-layouts/Featured_hu459979cddc63524e064df15b75705ecd_46676_150x0_resize_q75_lanczos.jpg" alt="Building shinyApp2: Inputs options " class="lazyload">
-    </a>
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/how-to-build-a-shinyapp/" >How to build a ShinyApp</a>
-    </h3>
-
-    
-    <a href="/post/how-to-build-a-shinyapp/"  class="summary-link">
-      <div class="article-style">
-        Building a &ldquo;Hello world shinyApp&rdquo; We begin to demonstrate the building blocks of a shinyApp.
-An App needs a User interface (ui) and a server. The majic about the shiny package is that it can create both of this within R, plus run your app using an additionational shiny function.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Feb 16, 2021
+    Mar 31, 2021
   </span>
   
 
@@ -2306,14 +2097,10 @@ An App needs a User interface (ui) and a server. The majic about the shiny packa
   
   
   <span class="middot-divider"></span>
-  <a href="/post/how-to-build-a-shinyapp/#disqus_thread"></a>
+  <a href="/post/hardware-requirements-for-capi/#disqus_thread"></a>
   
 
   
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/r/">R</a></span>
   
 
 </div>
@@ -2330,8 +2117,8 @@ An App needs a User interface (ui) and a server. The majic about the shiny packa
     
     
     
-    <a href="/post/how-to-build-a-shinyapp/" >
-      <img src="/post/how-to-build-a-shinyapp/Featured_hu6f1cb8cdf661d31123e7a4449cbf7311_72030_c53945cb5b77609451cf251c13c994db.jpg" data-src="/post/how-to-build-a-shinyapp/Featured_hu6f1cb8cdf661d31123e7a4449cbf7311_72030_150x0_resize_q75_lanczos.jpg" alt="How to build a ShinyApp" class="lazyload">
+    <a href="/post/hardware-requirements-for-capi/" >
+      <img src="/post/hardware-requirements-for-capi/Featured_hu79112399890930ff40f7eb8c843940b2_782377_10cf6acc0d6eb79d9249a9b17d27fd32.png" data-src="/post/hardware-requirements-for-capi/Featured_hu79112399890930ff40f7eb8c843940b2_782377_150x0_resize_lanczos_2.png" alt="Hardware requirements for CAPI" class="lazyload">
     </a>
     
   </div>
@@ -2360,14 +2147,14 @@ An App needs a User interface (ui) and a server. The majic about the shiny packa
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0">
-      <a href="/post/how-to-scale-shiny-dashboards/" >How to Scale Shiny Dashboards</a>
+      <a href="/post/the-difference-between-capi-and-papi-computer-assisted-personal-interviewing/" >The Difference between CAPI and PAPI: Computer-Assisted Personal Interviewing</a>
     </h3>
 
     
-    <a href="/post/how-to-scale-shiny-dashboards/"  class="summary-link">
+    <a href="/post/the-difference-between-capi-and-papi-computer-assisted-personal-interviewing/"  class="summary-link">
       <div class="article-style">
-        Most of the comments I get after sharing mock up and prototype shiny applications are:-
- I love this app How fast did you add this features!! This is exactly what I need in my daily job at the company.
+        An overview of Computer-Assisted Personal Interviewing What is CAPI in survey?
+ Surveys are very important in collection of data. In this post we talk about the difference of CAPI and PAPI.
       </div>
     </a>
     
@@ -2393,7 +2180,7 @@ An App needs a User interface (ui) and a server. The majic about the shiny packa
           Last updated on
       
     
-    Jan 17, 2021
+    Mar 31, 2021
   </span>
   
 
@@ -2402,7 +2189,7 @@ An App needs a User interface (ui) and a server. The majic about the shiny packa
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    6 min read
   </span>
   
 
@@ -2412,14 +2199,10 @@ An App needs a User interface (ui) and a server. The majic about the shiny packa
   
   
   <span class="middot-divider"></span>
-  <a href="/post/how-to-scale-shiny-dashboards/#disqus_thread"></a>
+  <a href="/post/the-difference-between-capi-and-papi-computer-assisted-personal-interviewing/#disqus_thread"></a>
   
 
   
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/r/">R</a></span>
   
 
 </div>
@@ -2436,8 +2219,210 @@ An App needs a User interface (ui) and a server. The majic about the shiny packa
     
     
     
-    <a href="/post/how-to-scale-shiny-dashboards/" >
-      <img src="/post/how-to-scale-shiny-dashboards/Featured_hu4dfd7a842b0b08077966cbe869e7c3b7_13066_ae0c923bfce7f61ed991e2c34f662cc5.jpg" data-src="/post/how-to-scale-shiny-dashboards/Featured_hu4dfd7a842b0b08077966cbe869e7c3b7_13066_150x0_resize_q75_lanczos.jpg" alt="How to Scale Shiny Dashboards" class="lazyload">
+    <a href="/post/the-difference-between-capi-and-papi-computer-assisted-personal-interviewing/" >
+      <img src="/post/the-difference-between-capi-and-papi-computer-assisted-personal-interviewing/Featured_hubccc22f4f3577a5892accb4abe0816b4_1311189_b6cb8c69995e506f4586907717d4b7db.png" data-src="/post/the-difference-between-capi-and-papi-computer-assisted-personal-interviewing/Featured_hubccc22f4f3577a5892accb4abe0816b4_1311189_150x0_resize_lanczos_2.png" alt="The Difference between CAPI and PAPI: Computer-Assisted Personal Interviewing" class="lazyload">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/post/how-to-download-data-from-kdhs-into-rstudio/" >How to download data from KDHS into Rstudio</a>
+    </h3>
+
+    
+    <a href="/post/how-to-download-data-from-kdhs-into-rstudio/"  class="summary-link">
+      <div class="article-style">
+        KDHS Data One of best and free data sets for conducting thesis and academic based analysis is the KDHS datasets. The Kenya Demographic and health survey data has a rich set of household variables that can reveal alot about Kenya.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Mar 29, 2021
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/how-to-download-data-from-kdhs-into-rstudio/#disqus_thread"></a>
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    
+    
+    <a href="/post/how-to-download-data-from-kdhs-into-rstudio/" >
+      <img src="/post/how-to-download-data-from-kdhs-into-rstudio/Featured_huf8d13417f90230a8c81be0d49a958351_293206_c0e4b9d01552e79660737f09f6d1bcbf.png" data-src="/post/how-to-download-data-from-kdhs-into-rstudio/Featured_huf8d13417f90230a8c81be0d49a958351_293206_150x0_resize_lanczos_2.png" alt="How to download data from KDHS into Rstudio" class="lazyload">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/post/how-to-reset-to-previous-commit-version/" >How to reset to previous commit version</a>
+    </h3>
+
+    
+    <a href="/post/how-to-reset-to-previous-commit-version/"  class="summary-link">
+      <div class="article-style">
+        Downloading git for desktop The first you do is to install the git for desktop if are not yet conversant with a version control client. You can download the git for desktop here.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Mar 29, 2021
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/how-to-reset-to-previous-commit-version/#disqus_thread"></a>
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    
+    
+    <a href="/post/how-to-reset-to-previous-commit-version/" >
+      <img src="/post/how-to-reset-to-previous-commit-version/Featured_hu14c7c1c852a75549fe51f21a71f77bc2_428606_1c4d9519da1b68cde43a044200f82b73.png" data-src="/post/how-to-reset-to-previous-commit-version/Featured_hu14c7c1c852a75549fe51f21a71f77bc2_428606_150x0_resize_lanczos_2.png" alt="How to reset to previous commit version" class="lazyload">
     </a>
     
   </div>
@@ -2913,6 +2898,92 @@ An App needs a User interface (ui) and a server. The majic about the shiny packa
     <div class="col-auto text-center flex-column d-none d-sm-flex">
       <div class="row h-50">
         <div class="col ">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border exp-fill">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title exp-title text-muted mt-0 mb-1">Research Analyst</h4>
+          <h4 class="card-title exp-company text-muted my-0"><a href="www.gro-intelligence.com/" target="_blank" rel="noopener">Gro Intelligence</a></h4>
+          <div class="text-muted exp-meta">
+            Aug 2021 –
+            
+              Present
+            
+            
+              <span class="middot-divider"></span>
+              <span>Nairobi</span>
+            
+          </div>
+          <div class="card-text"><p>Responsibilities include:</p>
+<ul>
+<li>Designing dashboards and r shiny applications</li>
+<li>Data management</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border exp-fill">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title exp-title text-muted mt-0 mb-1">Senior R Programmer</h4>
+          <h4 class="card-title exp-company text-muted my-0"><a href="www.bluemarblemicro.com/" target="_blank" rel="noopener">Blue Marble MicroInsurance</a></h4>
+          <div class="text-muted exp-meta">
+            Jul 2021 –
+            
+              Present
+            
+            
+              <span class="middot-divider"></span>
+              <span>Nairobi</span>
+            
+          </div>
+          <div class="card-text"><p>Responsibilities include:</p>
+<ul>
+<li>Optimizing R code</li>
+<li>Designing dashboards and r shiny applications</li>
+<li>Creating packages and modelling designs</li>
+<li>evaluation designs</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
         <div class="col">&nbsp;</div>
       </div>
       <div class="m-2">
@@ -3766,7 +3837,7 @@ An App needs a User interface (ui) and a server. The majic about the shiny packa
   
 
   <p class="powered-by">
-    &amp;copy2021
+    &amp;copy2022
   </p>
 
   
@@ -3943,7 +4014,7 @@ An App needs a User interface (ui) and a server. The majic about the shiny packa
       
     
     
-    <script src="/js/wowchemy.min.fa4f6d3acde1b2b1eb03b312c084c774.js"></script>
+    <script src="/js/wowchemy.min.572b7caf7fe601716a0f74d67d754c21.js"></script>
 
     
 

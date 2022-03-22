@@ -5,7 +5,7 @@
     <link>https://victormandela.netlify.app/</link>
       <atom:link href="https://victormandela.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <description>Victor Mandela</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>&amp;copy2021</copyright><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>&amp;copy2022</copyright><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
       <url>https://victormandela.netlify.app/images/icon_hu22efcb094e0f25517d9b2ea60a3d74df_42984_512x512_fill_lanczos_center_2.png</url>
       <title>Victor Mandela</title>
@@ -29,6 +29,160 @@
 &lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Further event details, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CAPI Workflow: CSPro and Survey Solutions</title>
+      <link>https://victormandela.netlify.app/post/capi-workflow-cspro-and-survey-solutions/</link>
+      <pubDate>Wed, 31 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://victormandela.netlify.app/post/capi-workflow-cspro-and-survey-solutions/</guid>
+      <description>
+&lt;script src=&#34;https://victormandela.netlify.app/post/capi-workflow-cspro-and-survey-solutions/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;workflows-for-capis-computer-assisted-personal-interviewing&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Workflows for CAPIs: Computer-Assisted Personal Interviewing&lt;/h2&gt;
+&lt;p&gt;We are going to go through most of the modules for both CSPro and
+Survey Solutions. I spent the last several years working on CAPI fieldwork projects across East Africa. In particular, focusing on the transition from paper-based collection to CAPI collection. In this post I would wish to share some of my experiences with you on how to make your transition as smooth as possible.&lt;/p&gt;
+&lt;p&gt;We’re going to be focusing on CAPI workflow. The one thing I want you to take away from this post is that designing your system in CAPI is not a replacement for, first of all, having a version of your questionnaire made in Word or Excel. Think of it this way – you wouldn’t build a house by picking up a hammer, a nail and some wood, and start building.&lt;/p&gt;
+&lt;p&gt;First, you design a plan of how you want your house to look and then you’d go and build it to match that – the same should be said of a CAPI system. Also, having a version of the questionnaire that we can print out and physically hold on paper is really beneficial during interviewer training, and it can also serve as a final back up during field work.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;Building.png&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Building a CAPI you need a design first&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Let’s take a look now at the CAPI workflow in more depth. For the CAPI workflow, there’s three key steps to keep in mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;First of all, questionnaire developments;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Secondly, setting up your CAPI system;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;and thirdly, review and assessments.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;workflow.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Three steps in CAPI workflow&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;questionnaire-developments&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Questionnaire developments&lt;/h2&gt;
+&lt;p&gt;We should first design your questionnaire in a &lt;strong&gt;master language&lt;/strong&gt;. For example this might be English, Kiswahili, French, Russian or Chinese, depending on your part of the world this version should be created in Word or Excel. This is going to serve as our paper version or master version.&lt;/p&gt;
+&lt;p&gt;It should be easily printable so you can create a paper version for training and backup purposes. Within this document, each questionnaire component:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Question text,&lt;/li&gt;
+&lt;li&gt;Answer options,&lt;/li&gt;
+&lt;li&gt;Interviewer instructions,&lt;/li&gt;
+&lt;li&gt;Validation, and skip instructions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All should be easily identifiable, meaning it’s in a separate cell or a separate font. Next, it’s time to set up the CAPI system. Once our paper version is complete and finalized, we should use as a guide to build our CAPI system – meaning all of the CAPI system questions, text, and functionalities should follow and match to what we’ve created in our paper version.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;capi-development&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;CAPI Development&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;dev.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;During the time of CAPI development, a simultaneous translation of the master version into any other required languages can take place. During translations, it’s important to keep the components of the questionnaire in the same place, so that non speakers of that language can tell what part is what.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;review-and-assessment.&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Review and Assessment.&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;review.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;At this point we should test the CAPI system thoroughly and ensure it’s working correctly and matching exactly to the master paper version of our questionnaire. Once the CAPI system is finalized and working well in the master language, it’s time to insert other languages. Then we can test the system in your other languages with native speakers or the fieldwork teams if possible to make sure everything is where it should be. Next, today I want to talk about managing changes. It’s inevitable during our projects the changes will be required to to the questionnaire – either after pre-test and pilot tests or during training. So when we have changes we should:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;First of all, make them in the master paper version.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Next, we’ll update the CAPI system and the local language paper version and then finally, update the CAPI for the local language. During this process it’s important to highlight the changes or additions in the paper versions. It’s also important to strike-through deletions. This way, whoever’s designed the system can see what’s been taken away. It’s difficult to see what isn’t there.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Finally, use a new color or track changes for each round of changes if there’s going to be multiple rounds.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hardware requirements for CAPI</title>
+      <link>https://victormandela.netlify.app/post/hardware-requirements-for-capi/</link>
+      <pubDate>Wed, 31 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://victormandela.netlify.app/post/hardware-requirements-for-capi/</guid>
+      <description>
+&lt;script src=&#34;https://victormandela.netlify.app/post/hardware-requirements-for-capi/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;hardware-requirements-for-capi-implementation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Hardware Requirements for CAPI Implementation&lt;/h2&gt;
+&lt;p&gt;Remember that the hardware requirements will be the same regardless of which software package you choose for your project. So let’s take a look at some slides for the specifics.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First of all, you need a personal computer or laptop to set up your survey; tablets; power banks and a pocket or portable Wi-Fi.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;Requirements.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Requirements: Source Asian development bank&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;For the tablet specifications, you see that Survey Solutions and CSPro generally has the same requirements, except for Survey Solutions – it requires an android version 5.1. Both requires a minimum of 1.5 gigabytes of RAM; a memory of at least 1 gigabyte; a Wi-Fi or 3G or 4G connectivity; and the screen size would depend on the requirements of the survey.So here are some useful tablet tips. So the more complicated the survey, the higher the specs required. Depending on the extent of of your survey, it is usually more practical to purchase a high-end tablet at the onset. Also remember to get extra tablets for backup
+as tablets can break our get loss during field work. Also, field supervisors require tablet too. Make sure to purchase cases as this will increase the lifespan of your tablets. Android mobile phones can also be used, but tablets are recommended.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;connectivity-tips&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Connectivity tips&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;connect.png&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;now-here-are-some-connectivity-tips.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Now here are some connectivity tips.&lt;/h3&gt;
+&lt;p&gt;CAPI is best used with Internet connectivity. Once cases are synchronized over the Internet to the server, the data is safe.&lt;/p&gt;
+&lt;p&gt;A SIM card for each tablet with good 3G or 4G coverage should be ideal, or you could have one SIM card per team and share using a wireless hotspot. If there is no mobile coverage, you can also use Wi-Fi when possible.&lt;/p&gt;
+&lt;p&gt;For power solutions, remember since tablet batteries can run low during long days of interviewing, it is practical to bring power banks to charge tablets during field work. The higher the mAh capacity, the more charges they can last. Car chargers or solar chargers are also an alternative option. You might also want to train your interviewers to turn off Wi-Fi and screen brightness down during interviewing to conserve batteries.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;headquaters&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Headquaters&lt;/h3&gt;
+&lt;p&gt;For the headquarters, you will need laptop or desktop PCs running on Windows for your staff to use. You also need a cloud server to store data on either Dropbox or repository on github or gitlab or a physical server at your headquarters. Check out the specifications required at the CSPro or github websites.
+That’s all for the hardware requirements.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Difference between CAPI and PAPI: Computer-Assisted Personal Interviewing</title>
+      <link>https://victormandela.netlify.app/post/the-difference-between-capi-and-papi-computer-assisted-personal-interviewing/</link>
+      <pubDate>Wed, 31 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://victormandela.netlify.app/post/the-difference-between-capi-and-papi-computer-assisted-personal-interviewing/</guid>
+      <description>
+&lt;script src=&#34;https://victormandela.netlify.app/post/the-difference-between-capi-and-papi-computer-assisted-personal-interviewing/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;an-overview-of-computer-assisted-personal-interviewing&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;An overview of Computer-Assisted Personal Interviewing&lt;/h2&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;why.png&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;What is CAPI in survey?&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Surveys are very important in collection of data. In this post we talk about the difference of CAPI and PAPI. The believe is that CAPI is going to be the future of data collection all around the world.&lt;/p&gt;
+&lt;p&gt;We are going to have a really short introduction, introducing the concept of CAPI, talking about some of the work flows and also discussing some of the benefits of CAPI as opposed to the old method PAPI, pen and paper interviewing. So let’s take a look, first of all at what exactly is CAPI. Computer-Assisted Personal Interviewing or CAPI as the name suggests, involves the use of computers during survey data collection. Nowadays we don’t use physical computers themselves, we’re using more devices like tablets and smartphones to conduct the data collection. This is because they’re cheaper, smaller and portable to carry around the field. The broad benefits of CAPI are that it will enhance the statistical capability of any organization which is using it broadly speaking, because the data can collected faster, it’s more accessible and it results in high quality data.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;Implementation.png&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Implemantation&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;implementation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;We look now at the implementation between paper and pencil interviewing as opposed to computer-assisted personal interviewing. So the first few steps are the same – we need to have a questionnaire and we need to have personnel enumerators and supervisors regardless of the method we’re going to be doing. So the first three steps are really unaltered. The next part is where we see some big benefits in CAPI. If you’ve ever overseen a large paper-based survey, you’ll see that the printing of questionnaires becomes:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Expensive&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It chops down a lot of trees, and&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It’s quite time-consuming to put all the questionnaires together and distribute them out to the interviewers.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So this step is really a lot faster in CAPI because after we’ve designed the data entry template, it’s a very quick process to download this questionnaire onto the tablets and of course, no trees have to die in the making of a CAPI survey. Then fieldwork carries on much the same – it’s the same sort of process. The interviewers are doing the same job. The main difference is they’re recording their answers directly into the tablet or smartphone as opposed to writing it down on the paper. On the paper side, we next have supervisors editing. This is where the supervisor would go back and check through the answers which the interviewer has given, make sure the skip patterns were followed correctly, no outrageous values and things like this. There’s also a little bit of this in CAPI, we do need to do some QC work but a lot of this is taken away because the skip patterns are programmed automatically, so the interviewer can’t follow a wrong skip pattern – one of the big things supervisors used to check for, and also the data validation possible. So we have set ranges which the interviewers can enter for numeric values and things like this so there’s much less mistakes.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;Survey1.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Difference between PAPI and CAPI: source African Development Bank&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;benefits-of-capi&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Benefits of CAPI&lt;/h2&gt;
+&lt;p&gt;CAPI’s doing a lot of the supervisors’job which they used to do on the paper side. On the paper side, of course after the surveys are completed, we often had the process of somehow getting all the paper back from various parts of the country to the headquarters. So this could be quite of a process depending on the transport and logistical constraints where fieldwork is taking place. But CAPI makes this much easier for us in that we simply press upload, and through the magic of the internet the forms are sent directly back to headquarters instantly. So that’s a huge benefit.&lt;/p&gt;
+&lt;p&gt;The other benefit of CAPI here is that of course, there’s no data entry. The data entry is taking place live during the survey. So no longer have that huge step. You probably remember a whole room full of piles and piles of paper questionnaires which need to be double keyed in and all these process – these are all skipped in CAPI. So not only does it save a lot of hassle but it also means that the the process is happening faster. So we don’t lose, you know, two weeks or a month after fieldwork before we can start to see the data. We can see the data immediately as it’s taking place. Of course, we still have data cleaning and data analysis the same as we would in the paper days. The key benefits that CAPI offers us as we mentioned before, there’s less or even no paper printouts so that’s saving the trees and saving the cost. Our data accuracy is improved because we can set validations, so if an answer is illogical we can set certain rules within the CAPI system to prevent that from being entered. Next, the data availability is much faster. As soon as the interview is completed, it can be synchronized and sent back to the central server where it can be accessed by analysts right away. There’s no more waiting for paper forms to come back to headquarters and be keyed in before we can see what’s happening with the data. So that’s a super good benefit in terms of speed, but also in terms of data quality, because we could be checking the quality of the data that comes back almost instantly rather than having to wait. So lower costs – there’s been some studies done that, of course, with CAPI we have a little bit of initial outlay to purchase all of these smartphones or tablets, but you know, the cost of those things are dropping by the day and these things have shown that after just a few surveys,that initial cost has been recouped, and you’re actually starting to do cheaper fieldwork because there’s no need for the costs of printing and there’s no need for the cost of data entry staff. We have quicker access to the data of course as we said, we don’t need to enter all in.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;smart.png&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Collection Using smartphones and tablets&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;We can download it instantly from the server, and that means data analysis can start faster. So the minute fieldwork finishes we can begin data cleaning and data analysis can take place soon after.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;collection-of-other-data-types-using-capi&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Collection of Other Data Types Using CAPI&lt;/h2&gt;
+&lt;p&gt;Another good thing about CAPI is there’s, of course, some additional functionalities like GPS coordinates, multimedia collection, barcode scanning. There’s a whole range of different inputs we can collect rather than what we could simply write down with a pen in the old days. Also CAPI can lead to increased sample sizes. So that brings us to the end of
+this first lesson.&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -158,6 +312,69 @@ output$tabled &amp;lt;- renderDataTable(yields_tidy,
 
 }
 shinyApp(ui = ui, server = server)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to download data from KDHS into Rstudio</title>
+      <link>https://victormandela.netlify.app/post/how-to-download-data-from-kdhs-into-rstudio/</link>
+      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://victormandela.netlify.app/post/how-to-download-data-from-kdhs-into-rstudio/</guid>
+      <description>
+&lt;script src=&#34;https://victormandela.netlify.app/post/how-to-download-data-from-kdhs-into-rstudio/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;kdhs-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;KDHS Data&lt;/h2&gt;
+&lt;p&gt;One of best and free data sets for conducting thesis and academic based analysis is the &lt;strong&gt;KDHS datasets&lt;/strong&gt;. The Kenya Demographic and health survey data has a rich set of household variables that can reveal alot about Kenya.&lt;/p&gt;
+&lt;p&gt;In this post we want to evaluate on how to load kdhs datasets into R and change the existing stata format into much better format for analysis.&lt;/p&gt;
+&lt;p&gt;First of all make sure you have installed and loaded the following packages.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;library(tidyverse)
+library(janitor)
+library(Hmisc)
+library(tidymodels)
+library(haven)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The tidyverse has set of tools for manipulation of the data, the janitor, as the name suggests is for cleaning the names, the Hmisc is for grabbing the labels in the data names, and haven makes it possible to import the dataset in the stata format that we downloaded it.&lt;/p&gt;
+&lt;p&gt;Then we load the data.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+#load the data
+data &amp;lt;- haven::read_dta(&amp;quot;KEHR72FL.dta&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;procedure-for-reading-the-kdhs-dataset.&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Procedure for reading the kdhs dataset.&lt;/h2&gt;
+&lt;p&gt;Once you read in the data set into your work space in R. You need to extract the actual values of the labels and then you change the labels from stata into reasonable names. You finally have to clean the names by removing inconsistent punctuation in the names.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+names &amp;lt;- Hmisc::label(data) %&amp;gt;% unlist()  #Extract the actual names from the labels
+
+colnames(data) &amp;lt;- names       #change the labels from stata into reasonable names
+
+#clean the names
+data &amp;lt;- data %&amp;gt;% janitor::clean_names()    #removing inconsistent punctuation in the names&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to reset to previous commit version</title>
+      <link>https://victormandela.netlify.app/post/how-to-reset-to-previous-commit-version/</link>
+      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://victormandela.netlify.app/post/how-to-reset-to-previous-commit-version/</guid>
+      <description>
+&lt;script src=&#34;https://victormandela.netlify.app/post/how-to-reset-to-previous-commit-version/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;downloading-git-for-desktop&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Downloading git for desktop&lt;/h2&gt;
+&lt;p&gt;The first you do is to install the git for desktop if are not yet conversant with a version control client. You can download the git for desktop &lt;a href=&#34;https://git-scm.com/downloads&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then you can create a github account if you dont already have one, &lt;a href=&#34;https://github.com/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;resetting-to-previous-versions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Resetting to previous versions&lt;/h2&gt;
+&lt;p&gt;The other process of linking git for desktop with your tool of analysis depends with the IDE you are using, either if you are using jupiter notebook, rstudio or any other.&lt;/p&gt;
+&lt;p&gt;For you to reset back to previous versions you can cop the link below while replacing the commit id with the commit version you want.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git reset --hard &amp;lt;commidId&amp;gt; &amp;amp;&amp;amp; git clean -f&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -1937,13 +2154,13 @@ $$&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
-One 
+One
 &lt;/span&gt;
 &lt;span class=&#34;fragment &#34; &gt;
-&lt;strong&gt;Two&lt;/strong&gt; 
+&lt;strong&gt;Two&lt;/strong&gt;
 &lt;/span&gt;
 &lt;span class=&#34;fragment &#34; &gt;
-Three 
+Three
 &lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
